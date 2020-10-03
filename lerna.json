@@ -7,6 +7,10 @@
   "command": {
     "publish": {
       "ignoreChanges": ["*.md"]
+    },
+    "version": {
+      "allowBranch": "master",
+      "message": "chore(release): publish %s"
     }
   }
 }
