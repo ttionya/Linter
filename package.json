@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "linter",
+  "version": "1.0.0",
+  "description": "Linter and Prettier's profile repository.",
+  "keywords": [
+    "config",
+    "eslint",
+    "eslint-config",
+    "stylelint",
+    "stylelint-config",
+    "prettier",
+    "prettier-config"
+  ],
+  "author": "ttionya <git@ttionya.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/ttionya/Linter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttionya/Linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ttionya/Linter/issues"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.0"
+  }
+}
