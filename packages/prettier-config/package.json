@@ -19,12 +19,13 @@
     "url": "https://github.com/ttionya/Linter/issues"
   },
   "main": "prettierrc.js",
-  "files": [
-  ],
-  "scripts": {
-  },
+  "files": [],
+  "scripts": {},
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
+  },
+  "dependencies": {
+    "prettier": "^2.1.0"
   }
 }
