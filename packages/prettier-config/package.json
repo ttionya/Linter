@@ -18,8 +18,11 @@
   "bugs": {
     "url": "https://github.com/ttionya/Linter/issues"
   },
-  "main": "prettierrc.js",
-  "files": [],
+  "main": "prettierrc@v2.js",
+  "files": [
+    "prettierrc@v1.js",
+    "prettierrc@v2.js"
+  ],
   "scripts": {},
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

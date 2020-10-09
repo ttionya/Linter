@@ -3,8 +3,8 @@
  * @see {@link https://prettier.io/docs/en/options.html}
  */
 module.exports = {
-  // 一行最多 120 字符
-  printWidth: 120,
+  // 一行最多 100 个字符
+  printWidth: 100,
 
   // 使用 2 个空格缩进
   tabWidth: 2,
@@ -57,7 +57,4 @@ module.exports = {
 
   // 换行符使用 LF
   endOfLine: 'lf',
-
-  // 自动识别内嵌的代码并格式化
-  embeddedLanguageFormatting: 'auto',
 }
