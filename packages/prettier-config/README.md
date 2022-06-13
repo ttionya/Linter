@@ -6,11 +6,15 @@ Prettier rules.
 
 **Note: Prettier v2 started supporting shared configurations.**
 
+
+
 ## Usage
 
 ### Prettier v1
 
 If you still want to use Prettier v1, copy `prettierrc@v1.js` to the root of your project and rename it to `.prettierrc.js`.
+
+
 
 ### Prettier v2 (recommend)
 
@@ -31,6 +35,8 @@ module.exports = {
   // You can overwrite some properties from the shared configuration.
 }
 ```
+
+
 
 ## License
 
