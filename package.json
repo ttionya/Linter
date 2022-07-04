@@ -23,9 +23,10 @@
     "url": "https://github.com/ttionya/Linter/issues"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
     "prettier": "^2.0.0"
+    "lerna": "^5.1.0"
   }
 }
