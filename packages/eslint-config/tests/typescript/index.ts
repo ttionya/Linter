@@ -63,6 +63,14 @@ import preferRegexpExec from './prefer-regexp-exec/.eslintrc.js'
 import preferReturnThisType from './prefer-return-this-type/.eslintrc.js'
 import preferStringStartsEndsWith from './prefer-string-starts-ends-with/.eslintrc.js'
 import preferTsExpectError from './prefer-ts-expect-error/.eslintrc.js'
+import promiseFunctionAsync from './promise-function-async/.eslintrc.js'
+import requireArraySortCompare from './require-array-sort-compare/.eslintrc.js'
+import sortTypeUnionIntersectionMembers from './sort-type-union-intersection-members/.eslintrc.js'
+import strictBooleanExpressions from './strict-boolean-expressions/.eslintrc.js'
+import switchExhaustivenessCheck from './switch-exhaustiveness-check/.eslintrc.js'
+import tripleSlashReference from './triple-slash-reference/.eslintrc.js'
+import typedef from './typedef/.eslintrc.js'
+import unifiedSignatures from './unified-signatures/.eslintrc.js'
 
 export default {
   'array-type': arrayType,
@@ -130,4 +138,12 @@ export default {
   'prefer-return-this-type': preferReturnThisType,
   'prefer-string-starts-ends-with': preferStringStartsEndsWith,
   'prefer-ts-expect-error': preferTsExpectError,
+  'promise-function-async': promiseFunctionAsync,
+  'require-array-sort-compare': requireArraySortCompare,
+  'sort-type-union-intersection-members': sortTypeUnionIntersectionMembers,
+  'strict-boolean-expressions': strictBooleanExpressions,
+  'switch-exhaustiveness-check': switchExhaustivenessCheck,
+  'triple-slash-reference': tripleSlashReference,
+  typedef: typedef,
+  'unified-signatures': unifiedSignatures,
 }
