@@ -17,6 +17,26 @@ import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js
 import memberOrdering from './member-ordering/.eslintrc.js'
 import methodSignatureStyle from './method-signature-style/.eslintrc.js'
 import namingConvention from './naming-convention/.eslintrc.js'
+import noBaseToString from './no-base-to-string/.eslintrc.js'
+import noConfusingNonNullAssertion from './no-confusing-non-null-assertion/.eslintrc.js'
+import noConfusingVoidExpression from './no-confusing-void-expression/.eslintrc.js'
+import noDuplicateEnumValues from './no-duplicate-enum-values/.eslintrc.js'
+import noDynamicDelete from './no-dynamic-delete/.eslintrc.js'
+import noEmptyInterface from './no-empty-interface/.eslintrc.js'
+import noExplicitAny from './no-explicit-any/.eslintrc.js'
+import noExtraneousClass from './no-extraneous-class/.eslintrc.js'
+import noFloatingPromises from './no-floating-promises/.eslintrc.js'
+import noImplicitAnyCatch from './no-implicit-any-catch/.eslintrc.js'
+import noInvalidVoidType from './no-invalid-void-type/.eslintrc.js'
+import noMeaninglessVoidOperator from './no-meaningless-void-operator/.eslintrc.js'
+import noNamespace from './no-namespace/.eslintrc.js'
+import noNonNullAssertedNullishCoalescing from './no-non-null-asserted-nullish-coalescing/.eslintrc.js'
+import noNonNullAssertion from './no-non-null-assertion/.eslintrc.js'
+import noParameterProperties from './no-parameter-properties/.eslintrc.js'
+import noRedundantTypeConstituents from './no-redundant-type-constituents/.eslintrc.js'
+import noRequireImports from './no-require-imports/.eslintrc.js'
+import noThisAlias from './no-this-alias/.eslintrc.js'
+import noTypeAlias from './no-type-alias/.eslintrc.js'
 
 export default {
   'array-type': arrayType,
@@ -38,4 +58,24 @@ export default {
   'member-ordering': memberOrdering,
   'method-signature-style': methodSignatureStyle,
   'naming-convention': namingConvention,
+  'no-base-to-string': noBaseToString,
+  'no-confusing-non-null-assertion': noConfusingNonNullAssertion,
+  'no-confusing-void-expression': noConfusingVoidExpression,
+  'no-duplicate-enum-values': noDuplicateEnumValues,
+  'no-dynamic-delete': noDynamicDelete,
+  'no-empty-interface': noEmptyInterface,
+  'no-explicit-any': noExplicitAny,
+  'no-extraneous-class': noExtraneousClass,
+  'no-floating-promises': noFloatingPromises,
+  'no-implicit-any-catch': noImplicitAnyCatch,
+  'no-invalid-void-type': noInvalidVoidType,
+  'no-meaningless-void-operator': noMeaninglessVoidOperator,
+  'no-namespace': noNamespace,
+  'no-non-null-asserted-nullish-coalescing': noNonNullAssertedNullishCoalescing,
+  'no-non-null-assertion': noNonNullAssertion,
+  'no-parameter-properties': noParameterProperties,
+  'no-redundant-type-constituents': noRedundantTypeConstituents,
+  'no-require-imports': noRequireImports,
+  'no-this-alias': noThisAlias,
+  'no-type-alias': noTypeAlias,
 }
