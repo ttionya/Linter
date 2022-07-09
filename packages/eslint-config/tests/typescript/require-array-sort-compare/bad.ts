@@ -1,16 +1,12 @@
 /* eslint-disable */
 /* eslint-enable @typescript-eslint/require-array-sort-compare */
 
-// errorCount 3
+// errorCount 2
 
 export default 1
 
 const array = [1, 2]
-const stringArray = ['1', '2']
-
 array.sort()
-
-stringArray.sort()
 
 const one = 1
 const two = 2

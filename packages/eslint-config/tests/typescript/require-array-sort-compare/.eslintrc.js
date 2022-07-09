@@ -9,7 +9,7 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': [
       'error',
       {
-        ignoreStringArrays: false,
+        ignoreStringArrays: true,
       },
     ],
   },

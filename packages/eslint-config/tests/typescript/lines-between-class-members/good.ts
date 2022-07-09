@@ -6,7 +6,7 @@ export default 1
 class Foo {
   constructor() {}
 
-  bar() {}
+  bar(): void
   bar(a: string): void
   bar(a: string, b: string): void
   bar(a: string, b: string, c: string): void {}
