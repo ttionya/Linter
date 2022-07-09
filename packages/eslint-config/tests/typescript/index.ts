@@ -27,7 +27,6 @@ import noEmptyInterface from './no-empty-interface/.eslintrc.js'
 import noExplicitAny from './no-explicit-any/.eslintrc.js'
 import noExtraneousClass from './no-extraneous-class/.eslintrc.js'
 import noFloatingPromises from './no-floating-promises/.eslintrc.js'
-import noImplicitAnyCatch from './no-implicit-any-catch/.eslintrc.js'
 import noInvalidThis from './no-invalid-this/.eslintrc.js'
 import noInvalidVoidType from './no-invalid-void-type/.eslintrc.js'
 import noLoopFunc from './no-loop-func/.eslintrc.js'
@@ -36,7 +35,6 @@ import noMeaninglessVoidOperator from './no-meaningless-void-operator/.eslintrc.
 import noNamespace from './no-namespace/.eslintrc.js'
 import noNonNullAssertedNullishCoalescing from './no-non-null-asserted-nullish-coalescing/.eslintrc.js'
 import noNonNullAssertion from './no-non-null-assertion/.eslintrc.js'
-import noParameterProperties from './no-parameter-properties/.eslintrc.js'
 import noRedeclare from './no-redeclare/.eslintrc.js'
 import noRedundantTypeConstituents from './no-redundant-type-constituents/.eslintrc.js'
 import noRequireImports from './no-require-imports/.eslintrc.js'
@@ -115,7 +113,6 @@ export default {
   'no-explicit-any': noExplicitAny,
   'no-extraneous-class': noExtraneousClass,
   'no-floating-promises': noFloatingPromises,
-  'no-implicit-any-catch': noImplicitAnyCatch,
   'no-invalid-this': noInvalidThis,
   'no-invalid-void-type': noInvalidVoidType,
   'no-loop-func': noLoopFunc,
@@ -124,7 +121,6 @@ export default {
   'no-namespace': noNamespace,
   'no-non-null-asserted-nullish-coalescing': noNonNullAssertedNullishCoalescing,
   'no-non-null-assertion': noNonNullAssertion,
-  'no-parameter-properties': noParameterProperties,
   'no-redeclare': noRedeclare,
   'no-redundant-type-constituents': noRedundantTypeConstituents,
   'no-require-imports': noRequireImports,
