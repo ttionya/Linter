@@ -48,6 +48,21 @@ import noUnsafeMemberAccess from './no-unsafe-member-access/.eslintrc.js'
 import noUnsafeReturn from './no-unsafe-return/.eslintrc.js'
 import noUselessEmptyExport from './no-useless-empty-export/.eslintrc.js'
 import nonNullableTypeAssertionStyle from './non-nullable-type-assertion-style/.eslintrc.js'
+import parameterProperties from './parameter-properties/.eslintrc.js'
+import preferEnumInitializers from './prefer-enum-initializers/.eslintrc.js'
+import preferForOf from './prefer-for-of/.eslintrc.js'
+import preferFunctionType from './prefer-function-type/.eslintrc.js'
+import preferIncludes from './prefer-includes/.eslintrc.js'
+import preferLiteralEnumMember from './prefer-literal-enum-member/.eslintrc.js'
+import preferNullishCoalescing from './prefer-nullish-coalescing/.eslintrc.js'
+import preferOptionalChain from './prefer-optional-chain/.eslintrc.js'
+import preferReadonly from './prefer-readonly/.eslintrc.js'
+import preferReadonlyParameterTypes from './prefer-readonly-parameter-types/.eslintrc.js'
+import preferReduceTypeParameter from './prefer-reduce-type-parameter/.eslintrc.js'
+import preferRegexpExec from './prefer-regexp-exec/.eslintrc.js'
+import preferReturnThisType from './prefer-return-this-type/.eslintrc.js'
+import preferStringStartsEndsWith from './prefer-string-starts-ends-with/.eslintrc.js'
+import preferTsExpectError from './prefer-ts-expect-error/.eslintrc.js'
 
 export default {
   'array-type': arrayType,
@@ -100,4 +115,19 @@ export default {
   'no-unsafe-return': noUnsafeReturn,
   'no-useless-empty-export': noUselessEmptyExport,
   'non-nullable-type-assertion-style': nonNullableTypeAssertionStyle,
+  'parameter-properties': parameterProperties,
+  'prefer-enum-initializers': preferEnumInitializers,
+  'prefer-for-of': preferForOf,
+  'prefer-function-type': preferFunctionType,
+  'prefer-includes': preferIncludes,
+  'prefer-literal-enum-member': preferLiteralEnumMember,
+  'prefer-nullish-coalescing': preferNullishCoalescing,
+  'prefer-optional-chain': preferOptionalChain,
+  'prefer-readonly': preferReadonly,
+  'prefer-readonly-parameter-types': preferReadonlyParameterTypes,
+  'prefer-reduce-type-parameter': preferReduceTypeParameter,
+  'prefer-regexp-exec': preferRegexpExec,
+  'prefer-return-this-type': preferReturnThisType,
+  'prefer-string-starts-ends-with': preferStringStartsEndsWith,
+  'prefer-ts-expect-error': preferTsExpectError,
 }
