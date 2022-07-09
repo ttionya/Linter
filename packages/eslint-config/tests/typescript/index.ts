@@ -37,6 +37,17 @@ import noRedundantTypeConstituents from './no-redundant-type-constituents/.eslin
 import noRequireImports from './no-require-imports/.eslintrc.js'
 import noThisAlias from './no-this-alias/.eslintrc.js'
 import noTypeAlias from './no-type-alias/.eslintrc.js'
+import noUnnecessaryBooleanLiteralCompare from './no-unnecessary-boolean-literal-compare/.eslintrc.js'
+import noUnnecessaryCondition from './no-unnecessary-condition/.eslintrc.js'
+import noUnnecessaryQualifier from './no-unnecessary-qualifier/.eslintrc.js'
+import noUnnecessaryTypeArguments from './no-unnecessary-type-arguments/.eslintrc.js'
+import noUnsafeArgument from './no-unsafe-argument/.eslintrc.js'
+import noUnsafeAssignment from './no-unsafe-assignment/.eslintrc.js'
+import noUnsafeCall from './no-unsafe-call/.eslintrc.js'
+import noUnsafeMemberAccess from './no-unsafe-member-access/.eslintrc.js'
+import noUnsafeReturn from './no-unsafe-return/.eslintrc.js'
+import noUselessEmptyExport from './no-useless-empty-export/.eslintrc.js'
+import nonNullableTypeAssertionStyle from './non-nullable-type-assertion-style/.eslintrc.js'
 
 export default {
   'array-type': arrayType,
@@ -78,4 +89,15 @@ export default {
   'no-require-imports': noRequireImports,
   'no-this-alias': noThisAlias,
   'no-type-alias': noTypeAlias,
+  'no-unnecessary-boolean-literal-compare': noUnnecessaryBooleanLiteralCompare,
+  'no-unnecessary-condition': noUnnecessaryCondition,
+  'no-unnecessary-qualifier': noUnnecessaryQualifier,
+  'no-unnecessary-type-arguments': noUnnecessaryTypeArguments,
+  'no-unsafe-argument': noUnsafeArgument,
+  'no-unsafe-assignment': noUnsafeAssignment,
+  'no-unsafe-call': noUnsafeCall,
+  'no-unsafe-member-access': noUnsafeMemberAccess,
+  'no-unsafe-return': noUnsafeReturn,
+  'no-useless-empty-export': noUselessEmptyExport,
+  'non-nullable-type-assertion-style': nonNullableTypeAssertionStyle,
 }
