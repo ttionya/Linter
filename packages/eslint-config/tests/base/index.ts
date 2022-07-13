@@ -1,4 +1,7 @@
 import arrayCallbackReturn from './array-callback-return/.eslintrc.js'
+import lineCommentPosition from './line-comment-position/.eslintrc.js'
+import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js'
+import maxStatementsPerLine from './max-statements-per-line/.eslintrc.js'
 import noAwaitInLoop from './no-await-in-loop/.eslintrc.js'
 import noConstantBinaryExpression from './no-constant-binary-expression/.eslintrc.js'
 import noConstantCondition from './no-constant-condition/.eslintrc.js'
@@ -15,10 +18,14 @@ import noUnreachableLoop from './no-unreachable-loop/.eslintrc.js'
 import noUnusedPrivateClassMembers from './no-unused-private-class-members/.eslintrc.js'
 import noUnusedVars from './no-unused-vars/.eslintrc.js'
 import noUseBeforeDefine from './no-use-before-define/.eslintrc.js'
+import paddingLineBetweenStatements from './padding-line-between-statements/.eslintrc.js'
 import requireAtomicUpdates from './require-atomic-updates/.eslintrc.js'
 
 export default {
   'array-callback-return': arrayCallbackReturn,
+  'line-comment-position': lineCommentPosition,
+  'lines-between-class-members': linesBetweenClassMembers,
+  'max-statements-per-line': maxStatementsPerLine,
   'no-await-in-loop': noAwaitInLoop,
   'no-constant-binary-expression': noConstantBinaryExpression,
   'no-constant-condition': noConstantCondition,
@@ -35,5 +42,6 @@ export default {
   'no-unused-private-class-members': noUnusedPrivateClassMembers,
   'no-unused-vars': noUnusedVars,
   'no-use-before-define': noUseBeforeDefine,
+  'padding-line-between-statements': paddingLineBetweenStatements,
   'require-atomic-updates': requireAtomicUpdates,
 }
