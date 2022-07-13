@@ -1,4 +1,13 @@
+import accessorPairs from './accessor-pairs/.eslintrc.js'
 import arrayCallbackReturn from './array-callback-return/.eslintrc.js'
+import arrowBodyStyle from './arrow-body-style/.eslintrc.js'
+import blockScopedVar from './block-scoped-var/.eslintrc.js'
+import camelcase from './camelcase/.eslintrc.js'
+import capitalizedComments from './capitalized-comments/.eslintrc.js'
+import classMethodsUseThis from './class-methods-use-this/.eslintrc.js'
+import complexity from './complexity/.eslintrc.js'
+import consistentReturn from './consistent-return/.eslintrc.js'
+import consistentThis from './consistent-this/.eslintrc.js'
 import lineCommentPosition from './line-comment-position/.eslintrc.js'
 import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js'
 import maxStatementsPerLine from './max-statements-per-line/.eslintrc.js'
@@ -22,7 +31,16 @@ import paddingLineBetweenStatements from './padding-line-between-statements/.esl
 import requireAtomicUpdates from './require-atomic-updates/.eslintrc.js'
 
 export default {
+  'accessor-pairs': accessorPairs,
   'array-callback-return': arrayCallbackReturn,
+  'arrow-body-style': arrowBodyStyle,
+  'block-scoped-var': blockScopedVar,
+  camelcase: camelcase,
+  'capitalized-comments': capitalizedComments,
+  'class-methods-use-this': classMethodsUseThis,
+  complexity: complexity,
+  'consistent-return': consistentReturn,
+  'consistent-this': consistentThis,
   'line-comment-position': lineCommentPosition,
   'lines-between-class-members': linesBetweenClassMembers,
   'max-statements-per-line': maxStatementsPerLine,
