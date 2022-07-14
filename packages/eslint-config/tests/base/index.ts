@@ -89,13 +89,32 @@ import noRestrictedProperties from './no-restricted-properties/.eslintrc.js'
 import noRestrictedSyntax from './no-restricted-syntax/.eslintrc.js'
 import noReturnAssign from './no-return-assign/.eslintrc.js'
 import noReturnAwait from './no-return-await/.eslintrc.js'
+import noScriptUrl from './no-script-url/.eslintrc.js'
 import noSelfCompare from './no-self-compare/.eslintrc.js'
+import noSequences from './no-sequences/.eslintrc.js'
+import noShadow from './no-shadow/.eslintrc.js'
 import noTemplateCurlyInString from './no-template-curly-in-string/.eslintrc.js'
+import noTernary from './no-ternary/.eslintrc.js'
+import noThrowLiteral from './no-throw-literal/.eslintrc.js'
+import noUndefInit from './no-undef-init/.eslintrc.js'
+import noUndefined from './no-undefined/.eslintrc.js'
+import noUnderscoreDangle from './no-underscore-dangle/.eslintrc.js'
 import noUnmodifiedLoopCondition from './no-unmodified-loop-condition/.eslintrc.js'
+import noUnneededTernary from './no-unneeded-ternary/.eslintrc.js'
 import noUnreachableLoop from './no-unreachable-loop/.eslintrc.js'
+import noUnusedExpressions from './no-unused-expressions/.eslintrc.js'
 import noUnusedPrivateClassMembers from './no-unused-private-class-members/.eslintrc.js'
 import noUnusedVars from './no-unused-vars/.eslintrc.js'
 import noUseBeforeDefine from './no-use-before-define/.eslintrc.js'
+import noUselessCall from './no-useless-call/.eslintrc.js'
+import noUselessComputedKey from './no-useless-computed-key/.eslintrc.js'
+import noUselessConcat from './no-useless-concat/.eslintrc.js'
+import noUselessConstructor from './no-useless-constructor/.eslintrc.js'
+import noUselessRename from './no-useless-rename/.eslintrc.js'
+import noUselessReturn from './no-useless-return/.eslintrc.js'
+import noVar from './no-var/.eslintrc.js'
+import noVoid from './no-void/.eslintrc.js'
+import noWarningComments from './no-warning-comments/.eslintrc.js'
 import paddingLineBetweenStatements from './padding-line-between-statements/.eslintrc.js'
 import requireAtomicUpdates from './require-atomic-updates/.eslintrc.js'
 
@@ -191,13 +210,32 @@ export default {
   'no-restricted-syntax': noRestrictedSyntax,
   'no-return-assign': noReturnAssign,
   'no-return-await': noReturnAwait,
+  'no-script-url': noScriptUrl,
   'no-self-compare': noSelfCompare,
+  'no-sequences': noSequences,
+  'no-shadow': noShadow,
   'no-template-curly-in-string': noTemplateCurlyInString,
+  'no-ternary': noTernary,
+  'no-throw-literal': noThrowLiteral,
+  'no-undef-init': noUndefInit,
+  'no-undefined': noUndefined,
+  'no-underscore-dangle': noUnderscoreDangle,
   'no-unmodified-loop-condition': noUnmodifiedLoopCondition,
+  'no-unneeded-ternary': noUnneededTernary,
   'no-unreachable-loop': noUnreachableLoop,
+  'no-unused-expressions': noUnusedExpressions,
   'no-unused-private-class-members': noUnusedPrivateClassMembers,
   'no-unused-vars': noUnusedVars,
   'no-use-before-define': noUseBeforeDefine,
+  'no-useless-call': noUselessCall,
+  'no-useless-computed-key': noUselessComputedKey,
+  'no-useless-concat': noUselessConcat,
+  'no-useless-constructor': noUselessConstructor,
+  'no-useless-rename': noUselessRename,
+  'no-useless-return': noUselessReturn,
+  'no-var': noVar,
+  'no-void': noVoid,
+  'no-warning-comments': noWarningComments,
   'padding-line-between-statements': paddingLineBetweenStatements,
   'require-atomic-updates': requireAtomicUpdates,
 }
