@@ -53,8 +53,19 @@ import noEval from './no-eval/.eslintrc.js'
 import noExtendNative from './no-extend-native/.eslintrc.js'
 import noExtraBind from './no-extra-bind/.eslintrc.js'
 import noExtraLabel from './no-extra-label/.eslintrc.js'
+import noImplicitCoercion from './no-implicit-coercion/.eslintrc.js'
+import noImplicitGlobals from './no-implicit-globals/.eslintrc.js'
+import noImpliedEval from './no-implied-eval/.eslintrc.js'
+import noInlineComments from './no-inline-comments/.eslintrc.js'
 import noInnerDeclarations from './no-inner-declarations/.eslintrc.js'
+import noInvalidThis from './no-invalid-this/.eslintrc.js'
 import noIrregularWhitespace from './no-irregular-whitespace/.eslintrc.js'
+import noIterator from './no-iterator/.eslintrc.js'
+import noLabelVar from './no-label-var/.eslintrc.js'
+import noLabels from './no-labels/.eslintrc.js'
+import noLoneBlocks from './no-lone-blocks/.eslintrc.js'
+import noLonelyIf from './no-lonely-if/.eslintrc.js'
+import noLoopFunc from './no-loop-func/.eslintrc.js'
 import noPromiseExecutorReturn from './no-promise-executor-return/.eslintrc.js'
 import noPrototypeBuiltins from './no-prototype-builtins/.eslintrc.js'
 import noSelfCompare from './no-self-compare/.eslintrc.js'
@@ -123,8 +134,19 @@ export default {
   'no-extend-native': noExtendNative,
   'no-extra-bind': noExtraBind,
   'no-extra-label': noExtraLabel,
+  'no-implicit-coercion': noImplicitCoercion,
+  'no-implicit-globals': noImplicitGlobals,
+  'no-implied-eval': noImpliedEval,
+  'no-inline-comments': noInlineComments,
   'no-inner-declarations': noInnerDeclarations,
+  'no-invalid-this': noInvalidThis,
   'no-irregular-whitespace': noIrregularWhitespace,
+  'no-iterator': noIterator,
+  'no-label-var': noLabelVar,
+  'no-labels': noLabels,
+  'no-lone-blocks': noLoneBlocks,
+  'no-lonely-if': noLonelyIf,
+  'no-loop-func': noLoopFunc,
   'no-promise-executor-return': noPromiseExecutorReturn,
   'no-prototype-builtins': noPrototypeBuiltins,
   'no-self-compare': noSelfCompare,
