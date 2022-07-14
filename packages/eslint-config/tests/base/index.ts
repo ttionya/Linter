@@ -8,6 +8,29 @@ import classMethodsUseThis from './class-methods-use-this/.eslintrc.js'
 import complexity from './complexity/.eslintrc.js'
 import consistentReturn from './consistent-return/.eslintrc.js'
 import consistentThis from './consistent-this/.eslintrc.js'
+import defaultCase from './default-case/.eslintrc.js'
+import defaultCaseLast from './default-case-last/.eslintrc.js'
+import defaultParamLast from './default-param-last/.eslintrc.js'
+import dotNotation from './dot-notation/.eslintrc.js'
+import eqeqeq from './eqeqeq/.eslintrc.js'
+import funcNameMatching from './func-name-matching/.eslintrc.js'
+import funcNames from './func-names/.eslintrc.js'
+import funcStyle from './func-style/.eslintrc.js'
+import groupedAccessorPairs from './grouped-accessor-pairs/.eslintrc.js'
+import guardForIn from './guard-for-in/.eslintrc.js'
+import idDenylist from './id-denylist/.eslintrc.js'
+import idLength from './id-length/.eslintrc.js'
+import idMatch from './id-match/.eslintrc.js'
+import initDeclarations from './init-declarations/.eslintrc.js'
+import maxClassesPerFile from './max-classes-per-file/.eslintrc.js'
+import maxDepth from './max-depth/.eslintrc.js'
+import maxLines from './max-lines/.eslintrc.js'
+import maxLinesPerFunction from './max-lines-per-function/.eslintrc.js'
+import maxNestedCallbacks from './max-nested-callbacks/.eslintrc.js'
+import maxParams from './max-params/.eslintrc.js'
+import maxStatements from './max-statements/.eslintrc.js'
+import multilineCommentStyle from './multiline-comment-style/.eslintrc.js'
+import newCap from './new-cap/.eslintrc.js'
 import lineCommentPosition from './line-comment-position/.eslintrc.js'
 import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js'
 import maxStatementsPerLine from './max-statements-per-line/.eslintrc.js'
@@ -41,6 +64,29 @@ export default {
   complexity: complexity,
   'consistent-return': consistentReturn,
   'consistent-this': consistentThis,
+  'default-case': defaultCase,
+  'default-case-last': defaultCaseLast,
+  'default-param-last': defaultParamLast,
+  'dot-notation': dotNotation,
+  eqeqeq: eqeqeq,
+  'func-name-matching': funcNameMatching,
+  'func-names': funcNames,
+  'func-style': funcStyle,
+  'grouped-accessor-pairs': groupedAccessorPairs,
+  'guard-for-in': guardForIn,
+  'id-denylist': idDenylist,
+  'id-length': idLength,
+  'id-match': idMatch,
+  'init-declarations': initDeclarations,
+  'max-classes-per-file': maxClassesPerFile,
+  'max-depth': maxDepth,
+  'max-lines': maxLines,
+  'max-lines-per-function': maxLinesPerFunction,
+  'max-nested-callbacks': maxNestedCallbacks,
+  'max-params': maxParams,
+  'max-statements': maxStatements,
+  'multiline-comment-style': multilineCommentStyle,
+  'new-cap': newCap,
   'line-comment-position': lineCommentPosition,
   'lines-between-class-members': linesBetweenClassMembers,
   'max-statements-per-line': maxStatementsPerLine,
