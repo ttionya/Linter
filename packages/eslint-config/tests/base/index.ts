@@ -66,8 +66,29 @@ import noLabels from './no-labels/.eslintrc.js'
 import noLoneBlocks from './no-lone-blocks/.eslintrc.js'
 import noLonelyIf from './no-lonely-if/.eslintrc.js'
 import noLoopFunc from './no-loop-func/.eslintrc.js'
+import noMagicNumbers from './no-magic-numbers/.eslintrc.js'
+import noMultiAssign from './no-multi-assign/.eslintrc.js'
+import noMultiStr from './no-multi-str/.eslintrc.js'
+import noNegatedCondition from './no-negated-condition/.eslintrc.js'
+import noNestedTernary from './no-nested-ternary/.eslintrc.js'
+import noNew from './no-new/.eslintrc.js'
+import noNewFunc from './no-new-func/.eslintrc.js'
+import noNewObject from './no-new-object/.eslintrc.js'
+import noNewWrappers from './no-new-wrappers/.eslintrc.js'
+import noOctalEscape from './no-octal-escape/.eslintrc.js'
+import noParamReassign from './no-param-reassign/.eslintrc.js'
+import noPlusplus from './no-plusplus/.eslintrc.js'
 import noPromiseExecutorReturn from './no-promise-executor-return/.eslintrc.js'
+import noProto from './no-proto/.eslintrc.js'
 import noPrototypeBuiltins from './no-prototype-builtins/.eslintrc.js'
+import noRedeclare from './no-redeclare/.eslintrc.js'
+import noRestrictedExports from './no-restricted-exports/.eslintrc.js'
+import noRestrictedGlobals from './no-restricted-globals/.eslintrc.js'
+import noRestrictedImports from './no-restricted-imports/.eslintrc.js'
+import noRestrictedProperties from './no-restricted-properties/.eslintrc.js'
+import noRestrictedSyntax from './no-restricted-syntax/.eslintrc.js'
+import noReturnAssign from './no-return-assign/.eslintrc.js'
+import noReturnAwait from './no-return-await/.eslintrc.js'
 import noSelfCompare from './no-self-compare/.eslintrc.js'
 import noTemplateCurlyInString from './no-template-curly-in-string/.eslintrc.js'
 import noUnmodifiedLoopCondition from './no-unmodified-loop-condition/.eslintrc.js'
@@ -147,8 +168,29 @@ export default {
   'no-lone-blocks': noLoneBlocks,
   'no-lonely-if': noLonelyIf,
   'no-loop-func': noLoopFunc,
+  'no-magic-numbers': noMagicNumbers,
+  'no-multi-assign': noMultiAssign,
+  'no-multi-str': noMultiStr,
+  'no-negated-condition': noNegatedCondition,
+  'no-nested-ternary': noNestedTernary,
+  'no-new': noNew,
+  'no-new-func': noNewFunc,
+  'no-new-object': noNewObject,
+  'no-new-wrappers': noNewWrappers,
+  'no-octal-escape': noOctalEscape,
+  'no-param-reassign': noParamReassign,
+  'no-plusplus': noPlusplus,
   'no-promise-executor-return': noPromiseExecutorReturn,
+  'no-proto': noProto,
   'no-prototype-builtins': noPrototypeBuiltins,
+  'no-redeclare': noRedeclare,
+  'no-restricted-exports': noRestrictedExports,
+  'no-restricted-globals': noRestrictedGlobals,
+  'no-restricted-imports': noRestrictedImports,
+  'no-restricted-properties': noRestrictedProperties,
+  'no-restricted-syntax': noRestrictedSyntax,
+  'no-return-assign': noReturnAssign,
+  'no-return-await': noReturnAwait,
   'no-self-compare': noSelfCompare,
   'no-template-curly-in-string': noTemplateCurlyInString,
   'no-unmodified-loop-condition': noUnmodifiedLoopCondition,
