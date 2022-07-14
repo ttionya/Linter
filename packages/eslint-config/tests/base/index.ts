@@ -22,6 +22,8 @@ import idDenylist from './id-denylist/.eslintrc.js'
 import idLength from './id-length/.eslintrc.js'
 import idMatch from './id-match/.eslintrc.js'
 import initDeclarations from './init-declarations/.eslintrc.js'
+import lineCommentPosition from './line-comment-position/.eslintrc.js'
+import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js'
 import maxClassesPerFile from './max-classes-per-file/.eslintrc.js'
 import maxDepth from './max-depth/.eslintrc.js'
 import maxLines from './max-lines/.eslintrc.js'
@@ -29,16 +31,28 @@ import maxLinesPerFunction from './max-lines-per-function/.eslintrc.js'
 import maxNestedCallbacks from './max-nested-callbacks/.eslintrc.js'
 import maxParams from './max-params/.eslintrc.js'
 import maxStatements from './max-statements/.eslintrc.js'
+import maxStatementsPerLine from './max-statements-per-line/.eslintrc.js'
 import multilineCommentStyle from './multiline-comment-style/.eslintrc.js'
 import newCap from './new-cap/.eslintrc.js'
-import lineCommentPosition from './line-comment-position/.eslintrc.js'
-import linesBetweenClassMembers from './lines-between-class-members/.eslintrc.js'
-import maxStatementsPerLine from './max-statements-per-line/.eslintrc.js'
+import noAlert from './no-alert/.eslintrc.js'
+import noArrayConstructor from './no-array-constructor/.eslintrc.js'
 import noAwaitInLoop from './no-await-in-loop/.eslintrc.js'
+import noBitwise from './no-bitwise/.eslintrc.js'
+import noCaller from './no-caller/.eslintrc.js'
+import noConsole from './no-console/.eslintrc.js'
 import noConstantBinaryExpression from './no-constant-binary-expression/.eslintrc.js'
 import noConstantCondition from './no-constant-condition/.eslintrc.js'
 import noConstructorReturn from './no-constructor-return/.eslintrc.js'
+import noContinue from './no-continue/.eslintrc.js'
+import noDivRegex from './no-div-regex/.eslintrc.js'
 import noDuplicateImports from './no-duplicate-imports/.eslintrc.js'
+import noElseReturn from './no-else-return/.eslintrc.js'
+import noEmptyFunction from './no-empty-function/.eslintrc.js'
+import noEqNull from './no-eq-null/.eslintrc.js'
+import noEval from './no-eval/.eslintrc.js'
+import noExtendNative from './no-extend-native/.eslintrc.js'
+import noExtraBind from './no-extra-bind/.eslintrc.js'
+import noExtraLabel from './no-extra-label/.eslintrc.js'
 import noInnerDeclarations from './no-inner-declarations/.eslintrc.js'
 import noIrregularWhitespace from './no-irregular-whitespace/.eslintrc.js'
 import noPromiseExecutorReturn from './no-promise-executor-return/.eslintrc.js'
@@ -78,6 +92,8 @@ export default {
   'id-length': idLength,
   'id-match': idMatch,
   'init-declarations': initDeclarations,
+  'line-comment-position': lineCommentPosition,
+  'lines-between-class-members': linesBetweenClassMembers,
   'max-classes-per-file': maxClassesPerFile,
   'max-depth': maxDepth,
   'max-lines': maxLines,
@@ -85,16 +101,28 @@ export default {
   'max-nested-callbacks': maxNestedCallbacks,
   'max-params': maxParams,
   'max-statements': maxStatements,
+  'max-statements-per-line': maxStatementsPerLine,
   'multiline-comment-style': multilineCommentStyle,
   'new-cap': newCap,
-  'line-comment-position': lineCommentPosition,
-  'lines-between-class-members': linesBetweenClassMembers,
-  'max-statements-per-line': maxStatementsPerLine,
+  'no-alert': noAlert,
+  'no-array-constructor': noArrayConstructor,
   'no-await-in-loop': noAwaitInLoop,
+  'no-bitwise': noBitwise,
+  'no-caller': noCaller,
+  'no-console': noConsole,
   'no-constant-binary-expression': noConstantBinaryExpression,
   'no-constant-condition': noConstantCondition,
   'no-constructor-return': noConstructorReturn,
+  'no-continue': noContinue,
+  'no-div-regex': noDivRegex,
   'no-duplicate-imports': noDuplicateImports,
+  'no-else-return': noElseReturn,
+  'no-empty-function': noEmptyFunction,
+  'no-eq-null': noEqNull,
+  'no-eval': noEval,
+  'no-extend-native': noExtendNative,
+  'no-extra-bind': noExtraBind,
+  'no-extra-label': noExtraLabel,
   'no-inner-declarations': noInnerDeclarations,
   'no-irregular-whitespace': noIrregularWhitespace,
   'no-promise-executor-return': noPromiseExecutorReturn,
