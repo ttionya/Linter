@@ -115,7 +115,23 @@ import noUselessReturn from './no-useless-return/.eslintrc.js'
 import noVar from './no-var/.eslintrc.js'
 import noVoid from './no-void/.eslintrc.js'
 import noWarningComments from './no-warning-comments/.eslintrc.js'
+import objectShorthand from './object-shorthand/.eslintrc.js'
+import oneVar from './one-var/.eslintrc.js'
+import operatorAssignment from './operator-assignment/.eslintrc.js'
 import paddingLineBetweenStatements from './padding-line-between-statements/.eslintrc.js'
+import preferArrowCallback from './prefer-arrow-callback/.eslintrc.js'
+import preferConst from './prefer-const/.eslintrc.js'
+import preferDestructuring from './prefer-destructuring/.eslintrc.js'
+import preferExponentiationOperator from './prefer-exponentiation-operator/.eslintrc.js'
+import preferNamedCaptureGroup from './prefer-named-capture-group/.eslintrc.js'
+import preferNumericLiterals from './prefer-numeric-literals/.eslintrc.js'
+import preferObjectHasOwn from './prefer-object-has-own/.eslintrc.js'
+import preferObjectSpread from './prefer-object-spread/.eslintrc.js'
+import preferPromiseRejectErrors from './prefer-promise-reject-errors/.eslintrc.js'
+import preferRegexLiterals from './prefer-regex-literals/.eslintrc.js'
+import preferRestParams from './prefer-rest-params/.eslintrc.js'
+import preferSpread from './prefer-spread/.eslintrc.js'
+import preferTemplate from './prefer-template/.eslintrc.js'
 import requireAtomicUpdates from './require-atomic-updates/.eslintrc.js'
 
 export default {
@@ -236,6 +252,22 @@ export default {
   'no-var': noVar,
   'no-void': noVoid,
   'no-warning-comments': noWarningComments,
+  'object-shorthand': objectShorthand,
+  'one-var': oneVar,
+  'operator-assignment': operatorAssignment,
   'padding-line-between-statements': paddingLineBetweenStatements,
+  'prefer-arrow-callback': preferArrowCallback,
+  'prefer-const': preferConst,
+  'prefer-destructuring': preferDestructuring,
+  'prefer-exponentiation-operator': preferExponentiationOperator,
+  'prefer-named-capture-group': preferNamedCaptureGroup,
+  'prefer-numeric-literals': preferNumericLiterals,
+  'prefer-object-has-own': preferObjectHasOwn,
+  'prefer-object-spread': preferObjectSpread,
+  'prefer-promise-reject-errors': preferPromiseRejectErrors,
+  'prefer-regex-literals': preferRegexLiterals,
+  'prefer-rest-params': preferRestParams,
+  'prefer-spread': preferSpread,
+  'prefer-template': preferTemplate,
   'require-atomic-updates': requireAtomicUpdates,
 }
