@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": true,
+
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    "resolveJsonModule": true,
+    "noEmit": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+
+    "declaration": false,
+    "sourceMap": false,
+
+    "pretty": true,
+    "allowJs": true
+  }
+}
