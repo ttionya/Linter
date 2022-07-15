@@ -1,3 +1,5 @@
+/* eslint sort-imports: 'error' */
+
 import accessorPairs from './accessor-pairs/.eslintrc.js'
 import arrayCallbackReturn from './array-callback-return/.eslintrc.js'
 import arrowBodyStyle from './arrow-body-style/.eslintrc.js'
@@ -132,7 +134,18 @@ import preferRegexLiterals from './prefer-regex-literals/.eslintrc.js'
 import preferRestParams from './prefer-rest-params/.eslintrc.js'
 import preferSpread from './prefer-spread/.eslintrc.js'
 import preferTemplate from './prefer-template/.eslintrc.js'
+import radix from './radix/.eslintrc.js'
 import requireAtomicUpdates from './require-atomic-updates/.eslintrc.js'
+import requireAwait from './require-await/.eslintrc.js'
+import requireUnicodeRegexp from './require-unicode-regexp/.eslintrc.js'
+import sortImports from './sort-imports/.eslintrc.js'
+import sortKeys from './sort-keys/.eslintrc.js'
+import sortVars from './sort-vars/.eslintrc.js'
+import spacedComment from './spaced-comment/.eslintrc.js'
+import strict from './strict/.eslintrc.js'
+import symbolDescription from './symbol-description/.eslintrc.js'
+import varsOnTop from './vars-on-top/.eslintrc.js'
+import yoda from './yoda/.eslintrc.js'
 
 export default {
   'accessor-pairs': accessorPairs,
@@ -269,5 +282,16 @@ export default {
   'prefer-rest-params': preferRestParams,
   'prefer-spread': preferSpread,
   'prefer-template': preferTemplate,
+  radix: radix,
   'require-atomic-updates': requireAtomicUpdates,
+  'require-await': requireAwait,
+  'require-unicode-regexp': requireUnicodeRegexp,
+  'sort-imports': sortImports,
+  'sort-keys': sortKeys,
+  'sort-vars': sortVars,
+  'spaced-comment': spacedComment,
+  strict: strict,
+  'symbol-description': symbolDescription,
+  'vars-on-top': varsOnTop,
+  yoda: yoda,
 }

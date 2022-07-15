@@ -1,3 +1,5 @@
+/* eslint sort-imports: 'error' */
+
 import arrayType from './array-type/.eslintrc.js'
 import banTslintComment from './ban-tslint-comment/.eslintrc.js'
 import classLiteralPropertyStyle from './class-literal-property-style/.eslintrc.js'
