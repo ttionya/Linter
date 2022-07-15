@@ -6,6 +6,8 @@ Prettier rules.
 
 **Note: Prettier v2 started supporting shared configurations.**
 
+<br>
+
 
 
 ## Usage
@@ -35,6 +37,8 @@ module.exports = {
   // You can overwrite some properties from the shared configuration.
 }
 ```
+
+<br>
 
 
 

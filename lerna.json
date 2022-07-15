@@ -9,6 +9,7 @@
       "hoist": true
     },
     "publish": {
+      "registry": "https://registry.npmjs.org/",
       "ignoreChanges": ["*.md"]
     },
     "version": {
