@@ -1,50 +1,38 @@
 const path = require('path')
-const { lstatSync } = require('fs')
-const { sync: globSync } = require('glob')
 
-const root = path.join(__dirname, '..')
-const USED_NAMESPACE_NAME = ['base', 'typescript']
+const testsPath = path.join(__dirname, '../tests')
+const config = getConfig({
+  base: require(path.join(testsPath, 'base')),
+  typescript: require(path.join(testsPath, 'typescript')),
+})
 
-const output = USED_NAMESPACE_NAME.reduce((data, namespaceName) => {
-  const template = require(path.join(root, `tests/${namespaceName}/template.js`))
-
-  // 注入规则
-  if (template.rules) {
-    template.rules = getRules(namespaceName)
-  } else if (template.overrides?.length) {
-    template.overrides[0].rules = getRules(namespaceName)
-  }
-
-  return { ...data, ...template }
-}, {})
-
-module.exports = output
+module.exports = config
 
 /**
- * 获得规则对象
- * @param {string} namespaceName
+ * 获得配置
+ * @param {Object} usedNamespaceMap
  * @return {Object}
  */
-function getRules(namespaceName) {
-  const ruleList = globSync(getGlobPath(path.join(root, `tests/${namespaceName}/*`)))
+function getConfig(usedNamespaceMap) {
+  return Object.entries(usedNamespaceMap).reduce((last, [namespaceName, rulesMap]) => {
+    const template = require(path.join(testsPath, `${namespaceName}/eslintrc.tpl`))
 
-  return ruleList
-    .filter((rulePath) => {
-      return lstatSync(rulePath).isDirectory()
-    })
-    .map((rulePath) => {
-      return require(`${rulePath}/.eslintrc.js`).rules
-    })
-    .reduce((last, current) => {
-      return { ...last, ...current }
-    }, {})
+    // 注入规则
+    if (template.rules) {
+      template.rules = getRules(rulesMap)
+    } else if (template.overrides?.length) {
+      template.overrides[0].rules = getRules(rulesMap)
+    }
+
+    return { ...last, ...template }
+  }, {})
 }
 
 /**
- * 获得 glob 使用的 path，必须使用 / 而不能是 \
- * @param {string} path
- * @return {string}
+ * 获得规则对象
+ * @param {Object} rulesMap
+ * @return {Object}
  */
-function getGlobPath(path) {
-  return path.replace(/\\/g, '/')
+function getRules(rulesMap) {
+  return Object.entries(rulesMap).reduce((last, [_, rule]) => ({ ...last, ...rule.rules }), {})
 }
