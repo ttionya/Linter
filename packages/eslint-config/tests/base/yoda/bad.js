@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* eslint-enable yoda */
 
-// errorCount 1
+// errorCount 4
 
 const foo = 0
 
