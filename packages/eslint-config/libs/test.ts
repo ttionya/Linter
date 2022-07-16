@@ -4,11 +4,15 @@ import { readFileSync } from 'fs'
 import { ESLint, Linter } from 'eslint'
 import { assert } from 'chai'
 import { E_NAMESPACE, NAMESPACE } from './constants/namespace'
-import { FILE_GOOD, FILE_BAD, FILE_ESLINTRC, FILE_EXT } from './constants/test'
+import {
+  PATH_ROOT,
+  PATH_TESTS,
+  FILE_GOOD,
+  FILE_BAD,
+  FILE_ESLINTRC,
+  FILE_EXT,
+} from './constants/path'
 import { globSync } from './utils/glob'
-
-const root = path.join(__dirname, '..')
-const testsPath = path.join(root, 'tests')
 
 const ruleTestFileExt = FILE_EXT.join('|')
 
@@ -16,7 +20,7 @@ const ruleTestFileExt = FILE_EXT.join('|')
   checkTestFilesExists()
 
   NAMESPACE.forEach(async (namespace): Promise<void> => {
-    const ruleNamespacePath = path.join(testsPath, namespace)
+    const ruleNamespacePath = `${PATH_TESTS}/${namespace}`
 
     const eslint = new ESLint({
       baseConfig: getESLintConfig(namespace),
@@ -47,7 +51,7 @@ function checkTestFilesExists(): void {
   const lostFiles: string[] = []
 
   NAMESPACE.forEach((namespace) => {
-    const ruleList = globSync(path.join(root, 'tests', namespace, '*/'))
+    const ruleList = globSync(`${PATH_TESTS}/${namespace}/*/`)
 
     ruleList.forEach((rulePath) => {
       ruleFiles.forEach((fileName) => {
@@ -71,7 +75,7 @@ function checkTestFilesExists(): void {
  * 返回用例的查询模式
  */
 function getReportPattern(fileName: string, ruleNamespacePath: string): string[] {
-  return [path.join(ruleNamespacePath, '**', `${fileName}.+(${ruleTestFileExt})`)]
+  return [`${ruleNamespacePath}/**/${fileName}.+(${ruleTestFileExt})`]
 }
 
 /**
@@ -129,7 +133,7 @@ function getBadReportErrorCount(filePath: string): number {
  */
 function getESLintConfig(namespace: E_NAMESPACE): Linter.Config {
   // eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires
-  const eslintrc = require(path.join(root, `${namespace}.js`)) as Linter.Config
+  const eslintrc = require(`${PATH_ROOT}/${namespace}.js`) as Linter.Config
 
   // 额外对 ts 的规则添加 parserOptions
   if (namespace === E_NAMESPACE.TYPESCRIPT) {
@@ -137,7 +141,7 @@ function getESLintConfig(namespace: E_NAMESPACE): Linter.Config {
       ...eslintrc.parserOptions,
       // * HACK 此处直接指向了 top level 的 tsconfig 文件
       project: '../../tsconfig.json',
-      tsconfigRootDir: root,
+      tsconfigRootDir: PATH_ROOT,
     }
   }
 

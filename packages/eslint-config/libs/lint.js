@@ -15,7 +15,7 @@ module.exports = config
  */
 function getConfig(usedNamespaceMap) {
   return Object.entries(usedNamespaceMap).reduce((last, [namespaceName, rulesMap]) => {
-    const template = require(path.join(testsPath, `${namespaceName}/eslintrc.tpl`))
+    const template = require(`${testsPath}/${namespaceName}/eslintrc.tpl`)
 
     // 注入规则
     if (template.rules) {
