@@ -147,7 +147,7 @@ export default class Check {
    */
   public generateManifest(checkResultRecord: ICheckResultRecord): void {
     const manifestContent = this.getManifestContent(checkResultRecord)
-    const stringifyContent = JSON.stringify(manifestContent, undefined, 2)
+    const stringifyContent = JSON.stringify(manifestContent, null, 2)
 
     fs.writeFileSync(this.pathManifest, stringifyContent, 'utf-8')
   }
