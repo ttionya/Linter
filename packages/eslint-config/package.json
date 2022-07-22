@@ -1,0 +1,89 @@
+{
+  "name": "@ttionya/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint rules.",
+  "keywords": [
+    "config",
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "ttionya <git@ttionya.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/ttionya/Linter/tree/master/packages/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttionya/Linter.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/ttionya/Linter/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "base.js",
+  "files": [
+    "manifest.json",
+    "base.js",
+    "typescript.js"
+  ],
+  "scripts": {
+    "check": "ts-node -r tsconfig-paths/register scripts/check.ts",
+    "build": "ts-node -r tsconfig-paths/register scripts/build.ts",
+    "mocha": "mocha -c -r ts-node/register -r tsconfig-paths/register libs/test.ts",
+    "test": "npm run build && npm run mocha",
+    "prepublishOnly": "ts-node -r tsconfig-paths/register scripts/hooks/prepublishOnly.ts"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/eslint-parser": "^7.18.9",
+    "@types/chai": "^4.3.0",
+    "@types/eslint": "^8.4.0",
+    "@types/eslint-config-prettier": "^6.11.0",
+    "@types/glob": "^7.2.0",
+    "@types/mkdirp": "^1.0.2",
+    "@types/prettier": "^2.6.3",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "chai": "^4.3.0",
+    "chalk": "^4.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "glob": "^8.0.0",
+    "mkdirp": "^1.0.4",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "eslint": ">=8.20.0"
+  },
+  "peerDependencies": {
+    "@babel/core": ">=7.18.0",
+    "@babel/eslint-parser": ">=7.18.0",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "typescript": "4.x"
+  },
+  "peerDependenciesMeta": {
+    "@babel/core": {
+      "optional": true
+    },
+    "@babel/eslint-parser": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  }
+}

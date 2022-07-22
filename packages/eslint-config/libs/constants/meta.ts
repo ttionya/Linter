@@ -7,6 +7,7 @@ export const eslintrcMeta = `
  * ${pkg.homepage}
  *
  * Author: ${pkg.author}
+ * Version: __VERSION__
  *
  * 本文件由脚本自动生成，请勿修改
  */

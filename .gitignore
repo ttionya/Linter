@@ -10,3 +10,8 @@
 
 # NodeJS
 node_modules
+
+# Dist
+packages/eslint-config/base.js
+packages/eslint-config/typescript.js
+packages/eslint-config/manifest.json

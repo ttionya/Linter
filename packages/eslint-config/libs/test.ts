@@ -7,6 +7,7 @@ import { E_NAMESPACE, NAMESPACE } from './constants/namespace'
 import {
   PATH_ROOT,
   PATH_TESTS,
+  PATH_DIST,
   FILE_GOOD,
   FILE_BAD,
   FILE_ESLINTRC,
@@ -133,7 +134,7 @@ function getBadReportErrorCount(filePath: string): number {
  */
 function getESLintConfig(namespace: E_NAMESPACE): Linter.Config {
   // eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires
-  const eslintrc = require(`${PATH_ROOT}/${namespace}.js`) as Linter.Config
+  const eslintrc = require(`${PATH_DIST}/${namespace}.js`) as Linter.Config
 
   // 额外对 ts 的规则添加 parserOptions
   if (namespace === E_NAMESPACE.TYPESCRIPT) {
