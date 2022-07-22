@@ -9,3 +9,4 @@ export const DIR_DIST = 'dist'
 
 export const PATH_ROOT = path.join(__dirname, '../..')
 export const PATH_TESTS = path.join(PATH_ROOT, 'tests')
+export const PATH_DIST = path.join(PATH_ROOT, DIR_DIST)
