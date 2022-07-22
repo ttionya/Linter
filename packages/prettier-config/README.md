@@ -1,6 +1,6 @@
 # `@ttionya/prettier-config`
 
-[![npm](https://img.shields.io/npm/v/@ttionya/prettier-config?label=NPM&logo=npm)](https://www.npmjs.com/package/@ttionya/prettier-config) [![npm](https://img.shields.io/npm/dm/@ttionya/prettier-config?label=Downloads&logo=npm)](https://www.npmjs.com/package/@ttionya/prettier-config) [![npm](https://img.shields.io/npm/l/@ttionya/prettier-config?label=License&logo=npm)](https://www.npmjs.com/package/@ttionya/prettier-config)
+[![npm](https://img.shields.io/npm/v/@ttionya/prettier-config?label=NPM&logo=npm)](https://www.npmjs.com/package/@ttionya/prettier-config) [![npm](https://img.shields.io/npm/dm/@ttionya/prettier-config?label=Downloads&logo=npm)](https://www.npmjs.com/package/@ttionya/prettier-config) [![npm](https://img.shields.io/npm/l/@ttionya/prettier-config?label=License&logo=npm)](https://github.com/ttionya/Linter/blob/master/packages/prettier-config/LICENSE)
 
 Prettier rules.
 
