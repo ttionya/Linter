@@ -5,6 +5,6 @@ module.exports = {
      * @see {@link https://eslint.org/docs/latest/rules/no-return-assign}
      * @category Base
      */
-    'no-return-assign': ['error', 'always'],
+    'no-return-assign': ['error', 'except-parens'],
   },
 }

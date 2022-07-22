@@ -21,23 +21,24 @@ const array = [1, 2, 3]
 
 // checkForEach
 {
+  function handleItem(item) {
+    return item
+  }
+
   array.forEach(function (item) {
-    handleItem(item)
+    return handleItem(item)
   })
 
   array.forEach(function (item) {
     if (item < 0) {
-      return
+      return 1
     }
     handleItem(item)
   })
 
-  array.forEach(function (item) {
-    handleItem(item)
-    return
-  })
+  array.forEach((item) => handleItem(item))
 
   array.forEach((item) => {
-    handleItem(item)
+    return handleItem(item)
   })
 }

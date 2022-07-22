@@ -28,6 +28,7 @@ module.exports = {
   'no-dynamic-delete': require('./no-dynamic-delete/.eslintrc.js'),
   'no-empty-interface': require('./no-empty-interface/.eslintrc.js'),
   'no-explicit-any': require('./no-explicit-any/.eslintrc.js'),
+  'no-extra-semi': require('./no-extra-semi/.eslintrc.js'),
   'no-extraneous-class': require('./no-extraneous-class/.eslintrc.js'),
   'no-floating-promises': require('./no-floating-promises/.eslintrc.js'),
   'no-invalid-this': require('./no-invalid-this/.eslintrc.js'),

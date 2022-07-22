@@ -9,7 +9,7 @@ module.exports = {
       'error',
       {
         allowImplicit: false,
-        checkForEach: true,
+        checkForEach: false,
       },
     ],
   },

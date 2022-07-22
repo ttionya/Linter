@@ -32,12 +32,6 @@
   }
 
   {
-    const C = class {
-      x = C
-    }
-  }
-
-  {
     const C = class C {
       static {
         C.x = 'foo'
@@ -81,13 +75,6 @@
     return g()
   }
   const g = function () {}
-
-  {
-    const C = class {
-      x = foo
-    }
-    const foo = 1
-  }
 }
 
 // allowNamedExports

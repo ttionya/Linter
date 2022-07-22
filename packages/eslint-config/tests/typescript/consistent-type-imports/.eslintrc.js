@@ -6,12 +6,6 @@ module.exports = {
      * @category TypeScript
      * @fixable
      */
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {
-        prefer: 'type-imports',
-        disallowTypeAnnotations: true,
-      },
-    ],
+    '@typescript-eslint/consistent-type-imports': 'off',
   },
 }
