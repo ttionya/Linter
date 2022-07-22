@@ -22,6 +22,14 @@
     "sourceMap": false,
 
     "pretty": true,
-    "allowJs": true
-  }
+    "allowJs": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@ttionya/eslint-config/*": ["./packages/eslint-config/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./packages/eslint-config/typings"]
+  },
+
+  "include": ["./packages/**/*"]
 }

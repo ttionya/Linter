@@ -23,10 +23,17 @@
     "url": "https://github.com/ttionya/Linter/issues"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "npm run bootstrap"
   },
   "devDependencies": {
     "@ttionya/prettier-config": "./packages/prettier-config",
-    "lerna": "^5.1.0"
+    "@types/mocha": "^9.1.0",
+    "eslint": "^8.20.0",
+    "lerna": "^5.1.8",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
   }
 }
