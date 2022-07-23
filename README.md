@@ -8,8 +8,8 @@ Linter and Prettier's profile repository.
 
 ## Config List
 
-- [@ttionya/prettier-config](packages/eslint-config)
-- [@ttionya/eslint-config](packages/prettier-config)
+- [@ttionya/prettier-config](packages/prettier-config)
+- [@ttionya/eslint-config](packages/eslint-config)
 
 <br>
 

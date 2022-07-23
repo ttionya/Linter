@@ -1,4 +1,4 @@
-# `@ttionya/eslint-config`
+# @ttionya/eslint-config
 
 [![npm](https://img.shields.io/npm/v/@ttionya/eslint-config?label=NPM&logo=npm)](https://www.npmjs.com/package/@ttionya/eslint-config) [![npm](https://img.shields.io/npm/dm/@ttionya/eslint-config?label=Downloads&logo=npm)](https://www.npmjs.com/package/@ttionya/eslint-config) [![npm](https://img.shields.io/npm/l/@ttionya/eslint-config?label=License&logo=npm)](https://github.com/ttionya/Linter/blob/master/packages/eslint-config/LICENSE)
 
