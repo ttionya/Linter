@@ -1,0 +1,49 @@
+name: 'Check Outdated'
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      -
+        name: Set up NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      -
+        name: Test
+        run: |
+          npm ci
+          sed -i 's#\("eslint": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("@typescript-eslint/eslint-plugin": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("@typescript-eslint/parser": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("eslint-config-prettier": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("eslint-plugin-react": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("eslint-plugin-vue": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          npm run bootstrap
+          lerna run checkStrict
+      -
+        name: Get Content
+        if: ${{ failure() }}
+        id: pre
+        run: echo ::set-output name=message::$(lerna run check)
+      -
+        name: Create Issue
+        uses: JasonEtco/create-an-issue@v2
+        if: ${{ steps.pre.outputs.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: ${{ steps.pre.outputs.message }}
+        with:
+          filename: .github/CHECK_ISSUE_TEMPLATE.md
+          update_existing: true
+          search_existing: all
