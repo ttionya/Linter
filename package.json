@@ -27,6 +27,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@swc/core": "^1.2.218",
     "@ttionya/prettier-config": "./packages/prettier-config",
     "@types/mocha": "^9.1.0",
     "eslint": "^8.20.0",
