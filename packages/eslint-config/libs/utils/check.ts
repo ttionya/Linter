@@ -147,6 +147,14 @@ export default class Check {
    */
   public generateManifest(checkResultRecord: ICheckResultRecord): void {
     const manifestContent = this.getManifestContent(checkResultRecord)
+
+    this.generateManifestByContent(manifestContent)
+  }
+
+  /**
+   * 生成清单文件到 dist 目录（直接使用完成转换的内容生成）
+   */
+  public generateManifestByContent(manifestContent: ICheckResultOutputRecord): void {
     const stringifyContent = JSON.stringify(manifestContent, null, 2)
 
     fs.writeFileSync(this.pathManifest, stringifyContent, 'utf-8')
