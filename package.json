@@ -24,7 +24,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "beta": "lerna publish --dist-tag beta --preid beta",
+    "beta": "lerna publish --dist-tag beta",
     "prepare": "husky install"
   },
   "devDependencies": {

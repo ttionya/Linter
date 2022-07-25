@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/lerna/lerna/main/core/lerna/schemas/lerna-schema.json",
   "packages": [
     "packages/*"
   ],
@@ -10,11 +11,12 @@
     },
     "publish": {
       "registry": "https://registry.npmjs.org/",
-      "ignoreChanges": ["*.md"]
+      "preid": "beta"
     },
     "version": {
       "allowBranch": "master",
       "message": "chore(release): publish"
     }
-  }
+  },
+  "ignoreChanges": ["*.md"]
 }
