@@ -18,9 +18,6 @@
   "bugs": {
     "url": "https://github.com/ttionya/Linter/issues"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "main": "prettierrc@v2.js",
   "files": [
     "prettierrc@v1.js",
