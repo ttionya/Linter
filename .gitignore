@@ -15,3 +15,7 @@ node_modules
 packages/eslint-config/base.js
 packages/eslint-config/typescript.js
 packages/eslint-config/manifest.json
+
+# Changesets
+.changeset/*.md
+.changeset/pre.json

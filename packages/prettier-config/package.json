@@ -19,6 +19,7 @@
     "url": "https://github.com/ttionya/Linter/issues"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "main": "prettierrc@v2.js",
