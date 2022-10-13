@@ -49,7 +49,7 @@
     "@types/mkdirp": "^1.0.0",
     "@types/prettier": "^2.7.1",
     "@types/rimraf": "^3.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "^5.40.0",
     "chai": "^4.3.0",
     "chalk": "^4.0.0",
@@ -62,7 +62,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "eslint": ">=8.25.0"
+    "eslint": "8.20.0"
   },
   "peerDependencies": {
     "@babel/core": ">=7.18.0",
