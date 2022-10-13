@@ -18,6 +18,10 @@
   "bugs": {
     "url": "https://github.com/ttionya/Linter/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "main": "base.js",
   "files": [
     "manifest.json",
