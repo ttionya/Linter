@@ -1,6 +1,3 @@
-# root
-lerna.json
-
 # tests
 packages/eslint-config/tests/**/good.*
 packages/eslint-config/tests/**/bad.*

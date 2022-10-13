@@ -18,3 +18,4 @@ packages/eslint-config/manifest.json
 
 # Changesets
 .changeset/*.md
+.changeset/pre.json

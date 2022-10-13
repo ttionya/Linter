@@ -23,8 +23,11 @@
     "url": "https://github.com/ttionya/Linter/issues"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "beta": "lerna publish --dist-tag beta",
+    "bootstrap": "pnpm install",
+    "beta-enter": "pnpm changeset pre enter beta",
+    "beta-exit": "pnpm changeset pre exit",
+    "release": "pnpm changeset publish --tag",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install"
   },
   "devDependencies": {
