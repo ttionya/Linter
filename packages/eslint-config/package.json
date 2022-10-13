@@ -33,7 +33,7 @@
     "checkStrict": "ts-node -r tsconfig-paths/register scripts/check.ts --strict",
     "build": "ts-node -r tsconfig-paths/register scripts/build.ts",
     "mocha": "mocha -c -r ts-node/register -r tsconfig-paths/register libs/test.ts",
-    "test": "npm run build && npm run mocha",
+    "test": "pnpm run build && pnpm run mocha",
     "prepublishOnly": "ts-node -r tsconfig-paths/register scripts/hooks/prepublishOnly.ts"
   },
   "engines": {

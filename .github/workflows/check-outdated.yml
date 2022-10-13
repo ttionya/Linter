@@ -34,12 +34,12 @@ jobs:
           sed -i 's#\("eslint-plugin-react": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           sed -i 's#\("eslint-plugin-vue": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           pnpm install
-          pnpm run --filter=@ttionya/eslint-config --reporter=append-only checkStrict
+          pnpm run --filter=@ttionya/eslint-config checkStrict
       -
         name: Get Content
         if: ${{ failure() }}
         id: pre
-        run: echo ::set-output name=message::$(pnpm run --filter=@ttionya/eslint-config --reporter=append-only check)
+        run: echo ::set-output name=message::$(pnpm run --filter=@ttionya/eslint-config check)
       -
         name: Create Issue
         uses: JasonEtco/create-an-issue@v2
