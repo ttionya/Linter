@@ -1,6 +1,7 @@
 name: 'Check ESLint Rules Outdated'
 
 on:
+  repository_dispatch:
   schedule:
     - cron: '0 12 * * *'
 
@@ -33,7 +34,7 @@ jobs:
           sed -i 's#\("eslint-config-prettier": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           sed -i 's#\("eslint-plugin-react": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           sed -i 's#\("eslint-plugin-vue": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
-          pnpm install
+          pnpm install --no-frozen-lockfile
           pnpm run --filter=@ttionya/eslint-config checkStrict
       -
         name: Get Content
