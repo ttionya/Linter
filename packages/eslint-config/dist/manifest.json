@@ -31,6 +31,7 @@
         "init-declarations",
         "line-comment-position",
         "lines-between-class-members",
+        "logical-assignment-operators",
         "max-classes-per-file",
         "max-depth",
         "max-lines-per-function",
