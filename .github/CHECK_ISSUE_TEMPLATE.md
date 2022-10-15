@@ -2,6 +2,6 @@
 title: Rules are outdated
 ---
 
-```shell
+```json
 {{ env.MESSAGE }}
 ```

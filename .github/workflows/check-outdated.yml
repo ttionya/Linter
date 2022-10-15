@@ -35,12 +35,11 @@ jobs:
           sed -i 's#\("eslint-plugin-react": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           sed -i 's#\("eslint-plugin-vue": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
           pnpm install --no-frozen-lockfile
-          pnpm run --filter=@ttionya/eslint-config checkStrict
+          pnpm run --filter=@ttionya/eslint-config check
       -
         name: Get Content
-        if: ${{ failure() }}
         id: pre
-        run: echo ::set-output name=message::$(pnpm run --filter=@ttionya/eslint-config check)
+        run: echo ::set-output name=message::$(pnpm run --filter=@ttionya/eslint-config check:unexpected | tail -n +5)
       -
         name: Create Issue
         uses: JasonEtco/create-an-issue@v2
