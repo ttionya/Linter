@@ -27,6 +27,7 @@ module.exports = {
   'init-declarations': require('./init-declarations/.eslintrc.js'),
   'line-comment-position': require('./line-comment-position/.eslintrc.js'),
   'lines-between-class-members': require('./lines-between-class-members/.eslintrc.js'),
+  'logical-assignment-operators': require('./logical-assignment-operators/.eslintrc.js'),
   'max-classes-per-file': require('./max-classes-per-file/.eslintrc.js'),
   'max-depth': require('./max-depth/.eslintrc.js'),
   'max-lines': require('./max-lines/.eslintrc.js'),
