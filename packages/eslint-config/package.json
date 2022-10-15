@@ -30,7 +30,7 @@
   ],
   "scripts": {
     "check": "ts-node -r tsconfig-paths/register scripts/check.ts --output",
-    "checkStrict": "ts-node -r tsconfig-paths/register scripts/check.ts --strict",
+    "check:unexpected": "ts-node -r tsconfig-paths/register scripts/check.ts --output --no-expect",
     "build": "ts-node -r tsconfig-paths/register scripts/build.ts",
     "mocha": "mocha -c -r ts-node/register -r tsconfig-paths/register libs/test.ts",
     "test": "pnpm run build && pnpm run mocha",
@@ -49,6 +49,7 @@
     "@types/mkdirp": "^1.0.0",
     "@types/prettier": "^2.7.1",
     "@types/rimraf": "^3.0.2",
+    "@types/yargs-parser": "^21.0.0",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "^5.40.0",
     "chai": "^4.3.0",
@@ -59,7 +60,8 @@
     "glob": "^8.0.0",
     "mkdirp": "^1.0.0",
     "prettier": "^2.7.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "yargs-parser": "^21.1.0"
   },
   "dependencies": {
     "eslint": "8.20.0"

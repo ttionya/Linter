@@ -1,5 +1,6 @@
 import chalk from 'chalk'
 import { sync as mkdirpSync } from 'mkdirp'
+import parser from 'yargs-parser'
 import { E_NAMESPACE, PATH_DIST } from '@ttionya/eslint-config/libs/constants'
 import Check from '@ttionya/eslint-config/libs/utils/check'
 import {
@@ -8,27 +9,25 @@ import {
   ICheckResultOutputRecord,
 } from '@ttionya/eslint-config/typings/check'
 
-const args = process.argv.slice(2)
-const control = args.length ? args[0] : ''
+const argv = parser.detailed(process.argv.slice(2), {
+  configuration: {
+    'boolean-negation': false,
+  },
+}).argv
 
 const check = new Check()
 const checkResult = check.getCheckResultRecord()
 const manifestContent = check.getManifestContent(checkResult)
 
-switch (control) {
-  case '--strict':
-    // 严格模式，只要有非预期的内容，则直接报错
-    checkStrict(manifestContent)
-    break
-
-  case '--output':
-    // 输出模式，只输出有问题的项，不报错
-    checkOutput(manifestContent)
-    break
-
-  default:
-    // 默认生成 manifest 文件
-    generateManifest(manifestContent)
+if (argv.strict) {
+  // 严格模式，只要有非预期的内容，则直接报错
+  checkStrict(manifestContent)
+} else if (argv.output) {
+  // 输出模式，只输出有问题的项，不报错
+  checkOutput(manifestContent)
+} else {
+  // 默认生成 manifest 文件
+  generateManifest(manifestContent)
 }
 
 /**
@@ -91,11 +90,14 @@ function checkOutput(manifestContent: ICheckResultOutputRecord): void {
     }
   })
 
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (!hasUnexpected) {
-    console.log(chalk.green('all pass'))
+    if (!argv.noExpect) {
+      console.log(chalk.green('all pass'))
+    }
   } else {
-    console.log(chalk.yellow(JSON.stringify(result, null, 2)))
+    if (!argv.noUnexpected) {
+      console.log(chalk.yellow(JSON.stringify(result, null, 2)))
+    }
   }
 }
 
