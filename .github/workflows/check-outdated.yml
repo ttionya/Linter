@@ -50,4 +50,3 @@ jobs:
         with:
           filename: .github/CHECK_ISSUE_TEMPLATE.md
           update_existing: true
-          search_existing: all
