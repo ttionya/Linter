@@ -576,6 +576,13 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': 'off',
 
         /**
+         * 禁止 interface 和 class 的声明合并
+         * @see {@link https://typescript-eslint.io/rules/no-unsafe-declaration-merging/}
+         * @category TypeScript
+         */
+        '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+
+        /**
          * 禁止获取 any 类型的变量中的属性
          * @see {@link https://typescript-eslint.io/rules/no-unsafe-member-access/}
          * @category TypeScript
@@ -819,11 +826,11 @@ module.exports = {
 
         /**
          * 联合类型和交叉类型的每一项必须按字母排序
-         * @see {@link https://typescript-eslint.io/rules/sort-type-union-intersection-members/}
+         * @see {@link https://typescript-eslint.io/rules/sort-type-constituents/}
          * @category TypeScript
          * @fixable
          */
-        '@typescript-eslint/sort-type-union-intersection-members': 'off',
+        '@typescript-eslint/sort-type-constituents': 'off',
 
         /**
          * 条件判断必须传入布尔值
