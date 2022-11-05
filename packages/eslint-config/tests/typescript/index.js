@@ -54,6 +54,7 @@ module.exports = {
   'no-unsafe-argument': require('./no-unsafe-argument/.eslintrc.js'),
   'no-unsafe-assignment': require('./no-unsafe-assignment/.eslintrc.js'),
   'no-unsafe-call': require('./no-unsafe-call/.eslintrc.js'),
+  'no-unsafe-declaration-merging': require('./no-unsafe-declaration-merging/.eslintrc.js'),
   'no-unsafe-member-access': require('./no-unsafe-member-access/.eslintrc.js'),
   'no-unsafe-return': require('./no-unsafe-return/.eslintrc.js'),
   'no-unused-expressions': require('./no-unused-expressions/.eslintrc.js'),
