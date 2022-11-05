@@ -12,3 +12,5 @@ let trulyUndefined = void 0
 async function promiseMeSomething(): Promise<void> {}
 
 type stillVoid = void | never
+
+function printArg<T = void>(arg: T) {}
