@@ -80,7 +80,7 @@ module.exports = {
   'promise-function-async': require('./promise-function-async/.eslintrc.js'),
   'require-array-sort-compare': require('./require-array-sort-compare/.eslintrc.js'),
   'return-await': require('./return-await/.eslintrc.js'),
-  'sort-type-union-intersection-members': require('./sort-type-union-intersection-members/.eslintrc.js'),
+  'sort-type-constituents': require('./sort-type-constituents/.eslintrc.js'),
   'strict-boolean-expressions': require('./strict-boolean-expressions/.eslintrc.js'),
   'switch-exhaustiveness-check': require('./switch-exhaustiveness-check/.eslintrc.js'),
   'triple-slash-reference': require('./triple-slash-reference/.eslintrc.js'),
