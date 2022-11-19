@@ -52,6 +52,7 @@ module.exports = {
   'no-duplicate-imports': require('./no-duplicate-imports/.eslintrc.js'),
   'no-else-return': require('./no-else-return/.eslintrc.js'),
   'no-empty-function': require('./no-empty-function/.eslintrc.js'),
+  'no-empty-static-block': require('./no-empty-static-block/.eslintrc.js'),
   'no-eq-null': require('./no-eq-null/.eslintrc.js'),
   'no-eval': require('./no-eval/.eslintrc.js'),
   'no-extend-native': require('./no-extend-native/.eslintrc.js'),

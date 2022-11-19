@@ -468,6 +468,13 @@ module.exports = {
     'no-empty-function': 'error',
 
     /**
+     * 不允许有空的静态块
+     * @see {@link https://eslint.org/docs/latest/rules/no-empty-static-block}
+     * @category Base
+     */
+    'no-empty-static-block': 'error',
+
+    /**
      * 禁止使用 foo == null，必须使用 foo === null
      * @see {@link https://eslint.org/docs/latest/rules/no-eq-null}
      * @category Base
