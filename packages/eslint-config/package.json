@@ -40,7 +40,7 @@
     "node": ">=16.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.1",
+    "@babel/core": "^7.20.0",
     "@babel/eslint-parser": "^7.19.1",
     "@types/chai": "^4.3.0",
     "@types/eslint": "^8.4.0",
@@ -50,8 +50,8 @@
     "@types/prettier": "^2.7.1",
     "@types/rimraf": "^3.0.2",
     "@types/yargs-parser": "^21.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
     "chai": "^4.3.0",
     "chalk": "^4.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -64,13 +64,13 @@
     "yargs-parser": "^21.1.0"
   },
   "dependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "^8.28.0"
   },
   "peerDependencies": {
     "@babel/core": ">=7.18.0",
     "@babel/eslint-parser": ">=7.18.0",
-    "@typescript-eslint/eslint-plugin": ">=5.42.0",
-    "@typescript-eslint/parser": ">=5.42.0",
+    "@typescript-eslint/eslint-plugin": ">=5.43.0",
+    "@typescript-eslint/parser": ">=5.43.0",
     "typescript": "4.x"
   },
   "peerDependenciesMeta": {
