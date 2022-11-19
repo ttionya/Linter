@@ -80,6 +80,7 @@ module.exports = {
   'no-nested-ternary': require('./no-nested-ternary/.eslintrc.js'),
   'no-new': require('./no-new/.eslintrc.js'),
   'no-new-func': require('./no-new-func/.eslintrc.js'),
+  'no-new-native-nonconstructor': require('./no-new-native-nonconstructor/.eslintrc.js'),
   'no-new-object': require('./no-new-object/.eslintrc.js'),
   'no-new-wrappers': require('./no-new-wrappers/.eslintrc.js'),
   'no-octal-escape': require('./no-octal-escape/.eslintrc.js'),
