@@ -2,8 +2,6 @@ import path from 'path'
 import fs from 'fs'
 import { builtinRules as baseRuleRecord } from 'eslint/use-at-your-own-risk'
 import { rules as typescriptRuleRecord } from '@typescript-eslint/eslint-plugin'
-import { rules as vueRuleRecord } from 'eslint-plugin-vue'
-import { rules as reactRuleRecord } from 'eslint-plugin-react'
 import { rules as prettierRuleRecord } from 'eslint-config-prettier'
 import { IRuleModule, IRuleModuleRecord, IRuleModuleMap } from '@ttionya/eslint-config/typings/rule'
 import {
@@ -239,13 +237,5 @@ class CheckAdapter {
 
   private [E_NAMESPACE.TYPESCRIPT](): IAdapterResult {
     return { prefix: '@typescript-eslint/', ruleModuleRecord: typescriptRuleRecord }
-  }
-
-  private [E_NAMESPACE.VUE](): IAdapterResult {
-    return { prefix: 'vue/', ruleModuleRecord: vueRuleRecord }
-  }
-
-  private [E_NAMESPACE.REACT](): IAdapterResult {
-    return { prefix: 'react/', ruleModuleRecord: reactRuleRecord }
   }
 }

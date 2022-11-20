@@ -112,8 +112,6 @@ module.exports = {
 - [@babel/eslint-parser](https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser)
 - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)
 - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
-- [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
-- [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)
 
