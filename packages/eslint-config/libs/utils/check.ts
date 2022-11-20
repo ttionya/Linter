@@ -190,6 +190,8 @@ interface IAdapterResult {
 class CheckAdapter {
   private readonly checkInstance: Check
 
+  private readonly emptyRuleRecord = {}
+
   constructor(checkInstance: Check) {
     this.checkInstance = checkInstance
   }
@@ -237,5 +239,9 @@ class CheckAdapter {
 
   private [E_NAMESPACE.TYPESCRIPT](): IAdapterResult {
     return { prefix: '@typescript-eslint/', ruleModuleRecord: typescriptRuleRecord }
+  }
+
+  private [E_NAMESPACE.BABEL](): IAdapterResult {
+    return { prefix: '', ruleModuleRecord: this.emptyRuleRecord }
   }
 }
