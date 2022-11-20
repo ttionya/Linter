@@ -13,7 +13,7 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
-    es6: true,
+    es2022: true,
     node: true,
   },
 
@@ -23,7 +23,7 @@ module.exports = {
 
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2022,
+    ecmaVersion: 'latest',
     ecmaFeatures: {
       // 不允许 return 语句出现在 global 环境下
       globalReturn: false,
@@ -468,6 +468,13 @@ module.exports = {
     'no-empty-function': 'error',
 
     /**
+     * 不允许有空的静态块
+     * @see {@link https://eslint.org/docs/latest/rules/no-empty-static-block}
+     * @category Base
+     */
+    'no-empty-static-block': 'error',
+
+    /**
      * 禁止使用 foo == null，必须使用 foo === null
      * @see {@link https://eslint.org/docs/latest/rules/no-eq-null}
      * @category Base
@@ -708,6 +715,13 @@ module.exports = {
      * @category Base
      */
     'no-new-func': 'error',
+
+    /**
+     * 禁止 new 内置函数
+     * @see {@link https://eslint.org/docs/latest/rules/no-new-native-nonconstructor}
+     * @category Base
+     */
+    'no-new-native-nonconstructor': 'error',
 
     /**
      * 禁止直接 new Object

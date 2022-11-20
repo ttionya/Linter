@@ -4,7 +4,7 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
-    es6: true,
+    es2022: true,
     node: true,
   },
 
@@ -14,7 +14,7 @@ module.exports = {
 
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2022,
+    ecmaVersion: 'latest',
     ecmaFeatures: {
       // 不允许 return 语句出现在 global 环境下
       globalReturn: false,
