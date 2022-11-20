@@ -26,6 +26,7 @@
   "files": [
     "manifest.json",
     "base.js",
+    "babel.js",
     "typescript.js"
   ],
   "scripts": {
