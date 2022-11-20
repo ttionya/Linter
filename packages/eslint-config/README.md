@@ -11,6 +11,7 @@ ESLint Rules.
 ## Config List
 
 - [Base](#base)
+- [Babel](#babel)
 - [TypeScript](#typescript)
 
 <br>
@@ -21,12 +22,14 @@ ESLint Rules.
 
 ### Base
 
-Basic rules, based on `@babel/eslint-parser`.
+Basic rules.
 
 ```bash
-npm i -D @babel/core \
-         @babel/eslint-parser \
-         @ttionya/eslint-config
+# NPM
+npm i -D @ttionya/eslint-config
+
+# PNPM
+pnpm add -D @ttionya/eslint-config
 ```
 
 ```js
@@ -34,6 +37,38 @@ npm i -D @babel/core \
 
 module.exports = {
   extends: ['@ttionya/eslint-config/base'],
+
+  rules: {
+    // custom ESLint rules
+  },
+}
+```
+
+### Babel
+
+Basic rules, parser is `@babel/eslint-parser`, so you can use experimental and non-standard syntax provided by Babel.
+
+```bash
+# NPM
+npm i -D @babel/core \
+         @babel/eslint-parser \
+         @ttionya/eslint-config
+
+# PNPM
+pnpm add -D @babel/core \
+            @babel/eslint-parser \
+            @ttionya/eslint-config
+```
+
+```js
+/* .eslintrc.js */
+
+module.exports = {
+  extends: ['@ttionya/eslint-config/babel'],
+
+  rules: {
+    // custom ESLint rules
+  },
 }
 ```
 
@@ -42,11 +77,20 @@ module.exports = {
 TypeScript rules.
 
 ```bash
-npm i -D typescript \
+# NPM
+npm i -D typescript@~4.8.4 \
          @typescript-eslint/eslint-plugin \
          @typescript-eslint/parser \
          @ttionya/eslint-config
+
+# PNPM
+pnpm add -D typescript@~4.8.4 \
+            @typescript-eslint/eslint-plugin \
+            @typescript-eslint/parser \
+            @ttionya/eslint-config
 ```
+
+Note: `@typescript-eslint/typescript-estree@5.43.0` does not support TypeScript 4.9, so please use version `4.8.x`. See [`typescript-eslint/typescript-eslint#5688`](https://github.com/typescript-eslint/typescript-eslint/issues/5688) for detailed discussion. 
 
 ```js
 /* .eslintrc.js */
@@ -61,7 +105,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
       rules: {
         // custom @typescript-eslint/* rules
       },
@@ -70,33 +114,6 @@ module.exports = {
 
   rules: {
     // custom ESLint rules
-  },
-}
-```
-
-### All
-
-```bash
-npm i -D @babel/core \
-         @babel/eslint-parser \
-         typescript \
-         @typescript-eslint/eslint-plugin \
-         @typescript-eslint/parser \
-         @ttionya/eslint-config
-```
-
-```js
-/* .eslintrc.js */
-
-module.exports = {
-  extends: [
-    '@ttionya/eslint-config/base',
-    '@ttionya/eslint-config/typescript',
-  ],
-
-  parserOptions: {
-    project: ['./tsconfig.json'],
-    tsconfigRootDir: __dirname,
   },
 }
 ```
