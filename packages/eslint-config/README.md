@@ -76,21 +76,21 @@ module.exports = {
 
 TypeScript rules.
 
+This rule is recommended for use in node environments only.
+
 ```bash
 # NPM
-npm i -D typescript@~4.8.4 \
+npm i -D typescript \
          @typescript-eslint/eslint-plugin \
          @typescript-eslint/parser \
          @ttionya/eslint-config
 
 # PNPM
-pnpm add -D typescript@~4.8.4 \
+pnpm add -D typescript \
             @typescript-eslint/eslint-plugin \
             @typescript-eslint/parser \
             @ttionya/eslint-config
 ```
-
-Note: `@typescript-eslint/typescript-estree@5.43.0` does not support TypeScript 4.9, so please use version `4.8.x`. See [`typescript-eslint/typescript-eslint#5688`](https://github.com/typescript-eslint/typescript-eslint/issues/5688) for detailed discussion. 
 
 ```js
 /* .eslintrc.js */
