@@ -7,6 +7,8 @@ on:
 
 jobs:
   check:
+    name: Check Outdated
+
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +21,7 @@ jobs:
         name: Set up NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       -
         name: Install PNPM
         uses: pnpm/action-setup@v2.2.4
@@ -36,15 +38,14 @@ jobs:
           pnpm run --filter=@ttionya/eslint-config check
       -
         name: Get Content
-        id: pre
-        run: echo ::set-output name=message::$(pnpm run --filter=@ttionya/eslint-config check:unexpected | tail -n +5)
+        run: echo "message=$(pnpm run --filter=@ttionya/eslint-config check:unexpected | tail -n +5)" >> $GITHUB_ENV
       -
         name: Create Issue
         uses: JasonEtco/create-an-issue@v2
-        if: ${{ steps.pre.outputs.message }}
+        if: ${{ env.message }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MESSAGE: ${{ steps.pre.outputs.message }}
+          MESSAGE: ${{ env.message }}
         with:
           filename: .github/CHECK_ISSUE_TEMPLATE.md
           update_existing: true
