@@ -38,7 +38,11 @@ jobs:
           pnpm run --filter=@ttionya/eslint-config check
       -
         name: Get Content
-        run: echo "message=$(pnpm run --filter=@ttionya/eslint-config check:unexpected | tail -n +5)" >> $GITHUB_ENV
+        run: |
+          EOF="$(dd if=/dev/urandom bs=15 count=1 status=none | base64)"
+          echo "message<<${EOF}" >> $GITHUB_ENV
+          pnpm run --filter=@ttionya/eslint-config check:unexpected | tail -n +5 >> $GITHUB_ENV
+          echo "${EOF}" >> $GITHUB_ENV
       -
         name: Create Issue
         uses: JasonEtco/create-an-issue@v2
