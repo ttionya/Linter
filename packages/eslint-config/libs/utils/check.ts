@@ -3,13 +3,6 @@ import fs from 'fs'
 import { builtinRules as baseRuleRecord } from 'eslint/use-at-your-own-risk'
 import { rules as typescriptRuleRecord } from '@typescript-eslint/eslint-plugin'
 import { rules as prettierRuleRecord } from 'eslint-config-prettier'
-import { IRuleModule, IRuleModuleRecord, IRuleModuleMap } from '@ttionya/eslint-config/typings/rule'
-import {
-  ICheckResult,
-  ICheckResultRecord,
-  ICheckResultOutput,
-  ICheckResultOutputRecord,
-} from '@ttionya/eslint-config/typings/check'
 import {
   E_NAMESPACE,
   NAMESPACE,
@@ -19,6 +12,17 @@ import {
   checkResultOutputMeta,
 } from '../constants'
 import { globSync } from './glob'
+import type {
+  IRuleModule,
+  IRuleModuleRecord,
+  IRuleModuleMap,
+} from '@ttionya/eslint-config/typings/rule'
+import type {
+  ICheckResult,
+  ICheckResultRecord,
+  ICheckResultOutput,
+  ICheckResultOutputRecord,
+} from '@ttionya/eslint-config/typings/check'
 
 export default class Check {
   // 规则前缀

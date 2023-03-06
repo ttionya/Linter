@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import prettier from 'prettier'
-import { IRule, IRuleMeta } from '@ttionya/eslint-config/typings/rule'
 import {
   E_NAMESPACE,
   NAMESPACE_RULES,
@@ -10,6 +9,7 @@ import {
   FILE_ESLINTRC,
   eslintrcMeta,
 } from '../constants'
+import type { IRule, IRuleMeta } from '@ttionya/eslint-config/typings/rule'
 
 const root = path.join(__dirname, '../..')
 
@@ -48,11 +48,11 @@ export default class Generator {
   private getRuleMetaList(): IRuleMeta[] {
     const ruleRecord = NAMESPACE_RULES[this.namespace]!
 
-    return Object.keys(ruleRecord)
-      .map((ruleNameWithoutPrefix) => {
+    return Object.entries(ruleRecord)
+      .map(([ruleNameWithoutPrefix, rule]) => {
         const rulePath = `${PATH_TESTS}/${this.namespace}/${ruleNameWithoutPrefix}/${FILE_ESLINTRC}.js`
 
-        return this.getRuleMeta(rulePath, ruleRecord[ruleNameWithoutPrefix])
+        return this.getRuleMeta(rulePath, rule)
       })
       .flat()
   }
