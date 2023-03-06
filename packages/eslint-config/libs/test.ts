@@ -123,7 +123,7 @@ function getBadReportErrorCount(filePath: string): number {
   const match = /\/\/ errorCount (\d+)/.exec(badReportContent)
 
   if (match) {
-    return +match[1]
+    return +match[1]!
   }
 
   return -1

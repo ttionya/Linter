@@ -1,7 +1,7 @@
 import baseRules from '@ttionya/eslint-config/tests/base'
 import typescriptRules from '@ttionya/eslint-config/tests/typescript'
 import babelRules from '@ttionya/eslint-config/tests/babel'
-import { IRuleRecord } from '@ttionya/eslint-config/typings/rule'
+import type { IRuleRecord } from '@ttionya/eslint-config/typings/rule'
 
 export enum E_NAMESPACE {
   BASE = 'base',

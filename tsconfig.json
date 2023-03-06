@@ -8,6 +8,10 @@
   "compilerOptions": {
     "noEmit": true,
 
+    "allowJs": true,
+
+    "lib": ["ES2022"],
+
     "baseUrl": ".",
     "paths": {
       "@ttionya/eslint-config/*": ["./packages/eslint-config/*"]

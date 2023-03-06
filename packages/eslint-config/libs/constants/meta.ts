@@ -1,5 +1,5 @@
 import pkg from '@ttionya/eslint-config/package.json'
-import { ICheckResultOutput } from '@ttionya/eslint-config/typings/check'
+import type { ICheckResultOutput } from '@ttionya/eslint-config/typings/check'
 
 export const eslintrcMeta = `
 /**

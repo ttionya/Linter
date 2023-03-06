@@ -3,7 +3,7 @@ import { sync as mkdirpSync } from 'mkdirp'
 import parser from 'yargs-parser'
 import { E_NAMESPACE, PATH_DIST } from '@ttionya/eslint-config/libs/constants'
 import Check from '@ttionya/eslint-config/libs/utils/check'
-import {
+import type {
   ICheckResult,
   ICheckResultOutput,
   ICheckResultOutputRecord,
@@ -19,10 +19,10 @@ const check = new Check()
 const checkResult = check.getCheckResultRecord()
 const manifestContent = check.getManifestContent(checkResult)
 
-if (argv.strict) {
+if (argv['strict']) {
   // 严格模式，只要有非预期的内容，则直接报错
   checkStrict(manifestContent)
-} else if (argv.output) {
+} else if (argv['output']) {
   // 输出模式，只输出有问题的项，不报错
   checkOutput(manifestContent)
 } else {
@@ -91,11 +91,11 @@ function checkOutput(manifestContent: ICheckResultOutputRecord): void {
   })
 
   if (!hasUnexpected) {
-    if (!argv.noExpect) {
+    if (!argv['noExpect']) {
       console.log(chalk.green('all pass'))
     }
   } else {
-    if (!argv.noUnexpected) {
+    if (!argv['noUnexpected']) {
       console.log(chalk.yellow(JSON.stringify(result, null, 2)))
     }
   }
