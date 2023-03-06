@@ -24,6 +24,9 @@
   },
   "scripts": {
     "bootstrap": "pnpm install",
+    "lint": "pnpm run lint:eslint && pnpm run lint:type",
+    "lint:eslint": "eslint --ext .js,.ts --ignore-pattern \"packages/eslint-config/tests/*/*/**\" .",
+    "lint:type": "tsc -p tsconfig.test.json",
     "beta:enter": "pnpm changeset pre enter beta",
     "beta:exit": "pnpm changeset pre exit",
     "release": "pnpm changeset publish --tag",
