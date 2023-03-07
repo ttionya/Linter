@@ -351,6 +351,14 @@ module.exports = {
         '@typescript-eslint/no-floating-promises': 'off',
 
         /**
+         * 禁止带副作用的导入
+         * @see {@link https://typescript-eslint.io/rules/no-import-type-side-effects/}
+         * @category TypeScript
+         * @fixable
+         */
+        '@typescript-eslint/no-import-type-side-effects': 'error',
+
+        /**
          * 禁止在类之外的地方使用 this
          * @see {@link https://typescript-eslint.io/rules/no-invalid-this/}
          * @category TypeScript
@@ -398,6 +406,14 @@ module.exports = {
          * @requires-type-information
          */
         '@typescript-eslint/no-meaningless-void-operator': 'off',
+
+        /**
+         * 禁止枚举同时有字符串和数字成员
+         * @see {@link https://typescript-eslint.io/rules/no-mixed-enums/}
+         * @category TypeScript
+         * @requires-type-information
+         */
+        '@typescript-eslint/no-mixed-enums': 'error',
 
         /**
          * 禁止使用 namespace 来定义命名空间
