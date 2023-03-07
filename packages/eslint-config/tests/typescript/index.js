@@ -37,6 +37,7 @@ module.exports = {
   'no-loop-func': require('./no-loop-func/.eslintrc.js'),
   'no-magic-numbers': require('./no-magic-numbers/.eslintrc.js'),
   'no-meaningless-void-operator': require('./no-meaningless-void-operator/.eslintrc.js'),
+  'no-mixed-enums': require('./no-mixed-enums/.eslintrc.js'),
   'no-namespace': require('./no-namespace/.eslintrc.js'),
   'no-non-null-asserted-nullish-coalescing': require('./no-non-null-asserted-nullish-coalescing/.eslintrc.js'),
   'no-non-null-assertion': require('./no-non-null-assertion/.eslintrc.js'),

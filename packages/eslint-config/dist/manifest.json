@@ -366,6 +366,7 @@
         "@typescript-eslint/no-loop-func",
         "@typescript-eslint/no-magic-numbers",
         "@typescript-eslint/no-meaningless-void-operator",
+        "@typescript-eslint/no-mixed-enums",
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
         "@typescript-eslint/no-redeclare",
         "@typescript-eslint/no-redundant-type-constituents",
