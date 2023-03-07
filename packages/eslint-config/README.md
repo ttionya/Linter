@@ -136,6 +136,14 @@ module.exports = {
 
 
 
+## Changelog
+
+[Changelog](CHANGLOG.md)
+
+<br>
+
+
+
 ## License
 
 ISC
