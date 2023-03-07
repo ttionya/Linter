@@ -17,8 +17,8 @@ function copyDistToRoot(): void {
     const content = fs.readFileSync(path, 'utf-8')
     const replacedContent = content.replace('__VERSION__', pkg.version)
 
-    fs.writeFileSync(path.replace(DIR_DIST, ''), replacedContent, 'utf-8')
+    fs.writeFileSync(path.replace(`/${DIR_DIST}`, ''), replacedContent, 'utf-8')
 
-    console.log(`${chalk.blue(path)} has replaced.`)
+    console.log(`${chalk.blue(path)} has been replaced.`)
   })
 }

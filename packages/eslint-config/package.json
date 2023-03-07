@@ -35,7 +35,8 @@
     "build": "ts-node -r tsconfig-paths/register scripts/build.ts",
     "mocha": "mocha -c -r ts-node/register -r tsconfig-paths/register libs/test.ts",
     "test": "pnpm run build && pnpm run mocha",
-    "prepublishOnly": "ts-node -r tsconfig-paths/register scripts/hooks/prepublishOnly.ts"
+    "prepublishOnly": "ts-node -r tsconfig-paths/register scripts/hooks/prepublishOnly.ts",
+    "postpublish": "ts-node -r tsconfig-paths/register scripts/hooks/postpublish.ts"
   },
   "engines": {
     "node": ">=16.0.0"
