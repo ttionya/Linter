@@ -416,11 +416,13 @@
       "descriptionCN": "未变动的被 “eslint-config-prettier” 关闭的非推荐规则。",
       "expected": true,
       "list": [
+        "@typescript-eslint/block-spacing",
         "@typescript-eslint/brace-style",
         "@typescript-eslint/comma-dangle",
         "@typescript-eslint/comma-spacing",
         "@typescript-eslint/func-call-spacing",
         "@typescript-eslint/indent",
+        "@typescript-eslint/key-spacing",
         "@typescript-eslint/keyword-spacing",
         "@typescript-eslint/member-delimiter-style",
         "@typescript-eslint/no-extra-parens",
