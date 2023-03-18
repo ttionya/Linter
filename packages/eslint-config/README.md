@@ -138,7 +138,7 @@ module.exports = {
 
 ## Changelog
 
-[Changelog](CHANGLOG.md)
+[Changelog](CHANGELOG.md)
 
 <br>
 
