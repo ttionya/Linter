@@ -424,6 +424,7 @@
         "@typescript-eslint/indent",
         "@typescript-eslint/key-spacing",
         "@typescript-eslint/keyword-spacing",
+        "@typescript-eslint/lines-around-comment",
         "@typescript-eslint/member-delimiter-style",
         "@typescript-eslint/no-extra-parens",
         "@typescript-eslint/object-curly-spacing",
