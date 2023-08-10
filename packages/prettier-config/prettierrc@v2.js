@@ -1,6 +1,6 @@
 /**
  * Prettier Options
- * @see {@link https://prettier.io/docs/en/options.html}
+ * @see https://prettier.io/docs/en/options
  */
 module.exports = {
   ...require('./prettierrc@v1'),

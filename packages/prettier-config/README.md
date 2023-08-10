@@ -18,7 +18,7 @@ If you still want to use Prettier v1, copy `prettierrc@v1.js` to the root of you
 
 
 
-### Prettier v2 (recommend)
+### Prettier v3 (recommend)
 
 #### Install
 
