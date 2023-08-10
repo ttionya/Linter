@@ -1,7 +1,7 @@
 name: 'Check ESLint Rules Outdated'
 
 on:
-  repository_dispatch:
+  workflow_dispatch:
   schedule:
     - cron: '0 12 * * *'
 
