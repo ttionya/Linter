@@ -19,7 +19,7 @@ export default class Generator {
   /**
    * 生成配置文件到 dist 目录
    */
-  public generate(namespace: E_NAMESPACE): void {
+  public async generate(namespace: E_NAMESPACE): Promise<void> {
     this.namespace = namespace
 
     const ruleMetaList = this.getRuleMetaList()
@@ -30,7 +30,7 @@ export default class Generator {
       eslintrcMeta + eslintrcContent.replace(/rules:\s*\{}/, `rules: { ${rulesContent} }`)
 
     // 使用 prettier 格式化并写入文件
-    this.writeFileWithPrettier(content)
+    await this.writeFileWithPrettier(content)
   }
 
   /**
@@ -86,13 +86,9 @@ export default class Generator {
   /**
    * 使用 prettier 格式化并写入文件
    */
-  private writeFileWithPrettier(content: string): void {
-    const config = prettier.resolveConfig.sync(root)
-
-    const formattedContent = prettier.format(content, {
-      ...config,
-      parser: 'babel',
-    })
+  private async writeFileWithPrettier(content: string): Promise<void> {
+    const config = await prettier.resolveConfig(root)
+    const formattedContent = await prettier.format(content, { ...config, parser: 'babel' })
 
     fs.writeFileSync(`${PATH_DIST}/${this.namespace}.js`, formattedContent, 'utf-8')
   }

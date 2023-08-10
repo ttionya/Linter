@@ -5,19 +5,25 @@ import { NAMESPACE, PATH_DIST } from '@ttionya/eslint-config/libs/constants'
 import Generator from '@ttionya/eslint-config/libs/utils/generator'
 import Check from '@ttionya/eslint-config/libs/utils/check'
 
-const generator = new Generator()
 const check = new Check()
 
-// 移除 dist 目录
-rimrafSync(PATH_DIST)
+;(async function (): Promise<void> {
+  // 移除 dist 目录
+  rimrafSync(PATH_DIST)
 
-// 新建 dist 目录
-mkdirpSync(PATH_DIST)
+  // 新建 dist 目录
+  mkdirpSync(PATH_DIST)
 
-// 生成配置文件
-NAMESPACE.forEach((namespace) => generator.generate(namespace))
+  // 生成配置文件
+  await Promise.all(
+    NAMESPACE.map(async (namespace) => {
+      const generator = new Generator()
+      await generator.generate(namespace)
+    })
+  )
 
-// 生成清单文件
-check.generateManifest(check.getCheckResultRecord())
+  // 生成清单文件
+  check.generateManifest(check.getCheckResultRecord())
 
-console.log(chalk.green('done'))
+  console.log(chalk.green('done'))
+})()
