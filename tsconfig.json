@@ -1,5 +1,5 @@
 {
-  "extends": "@ttionya/tsconfig/tsconfig.node.json",
+  "extends": "@ttionya/tsconfig/tsconfig.commonjs.json",
 
   "ts-node": {
     "swc": true
@@ -10,9 +10,6 @@
 
     "allowJs": true,
 
-    "lib": ["ES2022"],
-
-    "baseUrl": ".",
     "paths": {
       "@ttionya/eslint-config/*": ["./packages/eslint-config/*"]
     },
