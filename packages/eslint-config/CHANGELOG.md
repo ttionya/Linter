@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.5.0
+
+### Dependencies
+
+- `eslint-config-prettier@^8.7.0` => `eslint-config-prettier@^9.0.0`
+- `typescript@4.x` => `typescript@4.x || 5.x`
+- `eslint@^8.35.0` => `eslint@^8.46.0`
+- `@typescript-eslint/eslint-plugin@>=5.54.0` => `@typescript-eslint/eslint-plugin@>=6.3.0`
+- `@typescript-eslint/parser@>=5.54.0` => `@typescript-eslint/parser@>=6.3.0`
+- `@babel/core@>=7.18.0` => `@babel/core@>=7.22.10`
+- `@babel/eslint-parser@>=7.18.0` => `@babel/eslint-parser@>=7.22.10`
+
+### Fixed
+
+- Fix API incompatibility changes caused by Prettier upgrade
+- Fix the `@typescript/*` rules recommended field issue
+
+<br>
+
 ## v2.4.0
 
 ### Dependencies
