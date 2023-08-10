@@ -3,7 +3,7 @@ export interface IRuleModuleMeta {
   docs?: {
     description?: string
     url?: string
-    recommended?: boolean | 'error' | 'warn' | 'strict' | 'recommended'
+    recommended?: boolean | 'error' | 'warn' | 'strict' | 'recommended' | 'stylistic'
   }
   deprecated?: boolean
 }
