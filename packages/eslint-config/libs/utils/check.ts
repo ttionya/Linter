@@ -168,7 +168,7 @@ export default class Check {
   private isRecommended(ruleModule: IRuleModule): boolean {
     const recommended = ruleModule.meta?.docs?.recommended
 
-    return recommended === true || recommended === 'error' || recommended === 'warn'
+    return !!recommended && [true, 'error', 'warn', 'recommended'].includes(recommended)
   }
 
   /**
