@@ -38,7 +38,6 @@
         "max-lines",
         "max-nested-callbacks",
         "max-params",
-        "max-statements-per-line",
         "max-statements",
         "multiline-comment-style",
         "new-cap",
@@ -93,7 +92,6 @@
         "no-restricted-properties",
         "no-restricted-syntax",
         "no-return-assign",
-        "no-return-await",
         "no-script-url",
         "no-self-compare",
         "no-sequences",
@@ -216,7 +214,6 @@
         "switch-colon-spacing",
         "template-curly-spacing",
         "template-tag-spacing",
-        "unicode-bom",
         "wrap-iife",
         "wrap-regex",
         "yield-star-spacing"
@@ -226,7 +223,9 @@
       "description": "Non-recommended rules that conflict with rules that should be turned off by \"eslint-config-prettier\".",
       "descriptionCN": "与应该被 “eslint-config-prettier” 关闭的规则冲突的非推荐规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "max-statements-per-line"
+      ]
     },
     "prettierMissing": {
       "description": "Recommended rules that should be turned off by \"eslint-config-prettier\" but are missing from the project.",
@@ -244,7 +243,9 @@
       "description": "Deprecated rules that should not exist in the project.",
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "no-return-await"
+      ]
     },
     "overwriteRecommended": {
       "description": "Recommended rules that have been overwritten default configuration.",
@@ -325,7 +326,9 @@
       "description": "Rules that should exist in the project but are missing.",
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "unicode-bom"
+      ]
     }
   },
   "typescript": {
@@ -353,12 +356,11 @@
         "@typescript-eslint/member-ordering",
         "@typescript-eslint/method-signature-style",
         "@typescript-eslint/naming-convention",
-        "@typescript-eslint/no-base-to-string",
         "@typescript-eslint/no-confusing-non-null-assertion",
         "@typescript-eslint/no-confusing-void-expression",
         "@typescript-eslint/no-dupe-class-members",
-        "@typescript-eslint/no-duplicate-enum-values",
         "@typescript-eslint/no-dynamic-delete",
+        "@typescript-eslint/no-empty-interface",
         "@typescript-eslint/no-extraneous-class",
         "@typescript-eslint/no-import-type-side-effects",
         "@typescript-eslint/no-invalid-this",
@@ -368,18 +370,16 @@
         "@typescript-eslint/no-meaningless-void-operator",
         "@typescript-eslint/no-mixed-enums",
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
+        "@typescript-eslint/no-non-null-assertion",
         "@typescript-eslint/no-redeclare",
-        "@typescript-eslint/no-redundant-type-constituents",
         "@typescript-eslint/no-require-imports",
         "@typescript-eslint/no-restricted-imports",
         "@typescript-eslint/no-shadow",
         "@typescript-eslint/no-throw-literal",
-        "@typescript-eslint/no-type-alias",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare",
         "@typescript-eslint/no-unnecessary-condition",
         "@typescript-eslint/no-unnecessary-qualifier",
         "@typescript-eslint/no-unnecessary-type-arguments",
-        "@typescript-eslint/no-unsafe-declaration-merging",
         "@typescript-eslint/no-unused-expressions",
         "@typescript-eslint/no-use-before-define",
         "@typescript-eslint/no-useless-constructor",
@@ -440,7 +440,9 @@
       "description": "Non-recommended rules that conflict with rules that should be turned off by \"eslint-config-prettier\".",
       "descriptionCN": "与应该被 “eslint-config-prettier” 关闭的规则冲突的非推荐规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "@typescript-eslint/no-extra-semi"
+      ]
     },
     "prettierMissing": {
       "description": "Recommended rules that should be turned off by \"eslint-config-prettier\" but are missing from the project.",
@@ -458,23 +460,26 @@
       "description": "Deprecated rules that should not exist in the project.",
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "@typescript-eslint/no-type-alias"
+      ]
     },
     "overwriteRecommended": {
       "description": "Recommended rules that have been overwritten default configuration.",
       "descriptionCN": "重写了默认配置的推荐规则。",
       "expected": true,
       "list": [
-        "@typescript-eslint/no-empty-interface",
+        "@typescript-eslint/no-base-to-string",
+        "@typescript-eslint/no-duplicate-enum-values",
         "@typescript-eslint/no-explicit-any",
-        "@typescript-eslint/no-extra-semi",
         "@typescript-eslint/no-floating-promises",
         "@typescript-eslint/no-namespace",
-        "@typescript-eslint/no-non-null-assertion",
+        "@typescript-eslint/no-redundant-type-constituents",
         "@typescript-eslint/no-this-alias",
         "@typescript-eslint/no-unsafe-argument",
         "@typescript-eslint/no-unsafe-assignment",
         "@typescript-eslint/no-unsafe-call",
+        "@typescript-eslint/no-unsafe-declaration-merging",
         "@typescript-eslint/no-unsafe-member-access",
         "@typescript-eslint/no-unsafe-return",
         "@typescript-eslint/triple-slash-reference"
@@ -485,26 +490,24 @@
       "descriptionCN": "项目中不存在的推荐规则，意味着使用了默认配置。",
       "expected": true,
       "list": [
-        "@typescript-eslint/adjacent-overload-signatures",
         "@typescript-eslint/await-thenable",
         "@typescript-eslint/ban-ts-comment",
         "@typescript-eslint/ban-types",
         "@typescript-eslint/no-array-constructor",
-        "@typescript-eslint/no-empty-function",
+        "@typescript-eslint/no-duplicate-type-constituents",
         "@typescript-eslint/no-extra-non-null-assertion",
         "@typescript-eslint/no-for-in-array",
         "@typescript-eslint/no-implied-eval",
-        "@typescript-eslint/no-inferrable-types",
         "@typescript-eslint/no-loss-of-precision",
         "@typescript-eslint/no-misused-new",
         "@typescript-eslint/no-misused-promises",
         "@typescript-eslint/no-non-null-asserted-optional-chain",
         "@typescript-eslint/no-unnecessary-type-assertion",
         "@typescript-eslint/no-unnecessary-type-constraint",
+        "@typescript-eslint/no-unsafe-enum-comparison",
         "@typescript-eslint/no-unused-vars",
         "@typescript-eslint/no-var-requires",
         "@typescript-eslint/prefer-as-const",
-        "@typescript-eslint/prefer-namespace-keyword",
         "@typescript-eslint/require-await",
         "@typescript-eslint/restrict-plus-operands",
         "@typescript-eslint/restrict-template-expressions",
@@ -515,7 +518,13 @@
       "description": "Rules that should exist in the project but are missing.",
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
-      "list": []
+      "list": [
+        "@typescript-eslint/adjacent-overload-signatures",
+        "@typescript-eslint/class-methods-use-this",
+        "@typescript-eslint/no-empty-function",
+        "@typescript-eslint/no-inferrable-types",
+        "@typescript-eslint/prefer-namespace-keyword"
+      ]
     }
   },
   "babel": {
