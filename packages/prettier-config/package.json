@@ -24,8 +24,6 @@
   },
   "main": "prettierrc@v2.js",
   "files": [
-    "prettierrc@v1.js",
-    "prettierrc@v2.js"
   ],
   "scripts": {},
   "dependencies": {
