@@ -59,5 +59,13 @@
     "glob": "^10.3.10",
     "prettier-plugin-jsdoc": "^1.1.1",
     "rimraf": "^5.0.5"
+  },
+  "peerDependencies": {
+    "prettier-plugin-jsdoc": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "prettier-plugin-jsdoc": {
+      "optional": true
+    }
   }
 }
