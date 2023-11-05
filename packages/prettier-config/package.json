@@ -1,6 +1,6 @@
 {
   "name": "@ttionya/prettier-config",
-  "version": "1.2.0",
+  "version": "2.0.0-beta.0",
   "description": "Prettier rules.",
   "keywords": [
     "config",
@@ -22,13 +22,50 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "main": "prettierrc@v2.js",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils.mjs",
+      "require": "./dist/utils.cjs",
+      "types": "./dist/utils.d.ts"
+    },
+    "./jsdoc": {
+      "import": "./dist/jsdoc.mjs",
+      "require": "./dist/jsdoc.cjs",
+      "types": "./dist/jsdoc.d.ts"
+    }
+  },
   "files": [
-    "prettierrc@v1.js",
-    "prettierrc@v2.js"
+    "dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "pnpm clean && rollup -c rollup.config.js",
+    "clean": "rimraf dist",
+    "prepublishOnly": "pnpm build"
+  },
   "dependencies": {
+    "deepmerge": "^4.3.1",
     "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "glob": "^10.3.10",
+    "prettier-plugin-jsdoc": "^1.1.1",
+    "rimraf": "^5.0.5"
+  },
+  "peerDependencies": {
+    "prettier-plugin-jsdoc": "^1.1.0"
+  },
+  "peerDependenciesMeta": {
+    "prettier-plugin-jsdoc": {
+      "optional": true
+    }
   }
 }
