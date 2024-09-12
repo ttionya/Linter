@@ -658,6 +658,14 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'off',
 
         /**
+         * 禁止不安全的一元减号
+         * @see {@link https://typescript-eslint.io/rules/no-unsafe-unary-minus/}
+         * @category TypeScript
+         * @requires-type-information
+         */
+        '@typescript-eslint/no-unsafe-unary-minus': 'error',
+
+        /**
          * 禁止无用的表达式
          * @see {@link https://typescript-eslint.io/rules/no-unused-expressions/}
          * @category TypeScript

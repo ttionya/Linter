@@ -64,6 +64,7 @@ module.exports = {
   'no-unsafe-declaration-merging': require('./no-unsafe-declaration-merging/.eslintrc.js'),
   'no-unsafe-member-access': require('./no-unsafe-member-access/.eslintrc.js'),
   'no-unsafe-return': require('./no-unsafe-return/.eslintrc.js'),
+  'no-unsafe-unary-minus': require('./no-unsafe-unary-minus/.eslintrc.js'),
   'no-unused-expressions': require('./no-unused-expressions/.eslintrc.js'),
   'no-use-before-define': require('./no-use-before-define/.eslintrc.js'),
   'no-useless-constructor': require('./no-useless-constructor/.eslintrc.js'),

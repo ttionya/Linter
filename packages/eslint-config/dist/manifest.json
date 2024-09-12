@@ -381,6 +381,7 @@
         "@typescript-eslint/no-unnecessary-condition",
         "@typescript-eslint/no-unnecessary-qualifier",
         "@typescript-eslint/no-unnecessary-type-arguments",
+        "@typescript-eslint/no-unsafe-unary-minus",
         "@typescript-eslint/no-unused-expressions",
         "@typescript-eslint/no-use-before-define",
         "@typescript-eslint/no-useless-constructor",
@@ -518,7 +519,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-unsafe-unary-minus",
         "@typescript-eslint/no-useless-template-literals",
         "@typescript-eslint/prefer-destructuring",
         "@typescript-eslint/prefer-find",
