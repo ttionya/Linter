@@ -78,9 +78,9 @@
         "no-nested-ternary",
         "no-new-func",
         "no-new-native-nonconstructor",
-        "no-new-object",
         "no-new-wrappers",
         "no-new",
+        "no-object-constructor",
         "no-octal-escape",
         "no-param-reassign",
         "no-plusplus",
@@ -120,7 +120,6 @@
         "object-shorthand",
         "one-var",
         "operator-assignment",
-        "padding-line-between-statements",
         "prefer-arrow-callback",
         "prefer-const",
         "prefer-destructuring",
@@ -144,6 +143,7 @@
         "spaced-comment",
         "strict",
         "symbol-description",
+        "unicode-bom",
         "vars-on-top",
         "yoda"
       ]
@@ -180,6 +180,7 @@
         "linebreak-style",
         "lines-around-comment",
         "max-len",
+        "max-statements-per-line",
         "multiline-ternary",
         "new-parens",
         "newline-per-chained-call",
@@ -223,9 +224,7 @@
       "description": "Non-recommended rules that conflict with rules that should be turned off by \"eslint-config-prettier\".",
       "descriptionCN": "与应该被 “eslint-config-prettier” 关闭的规则冲突的非推荐规则。",
       "expected": false,
-      "list": [
-        "max-statements-per-line"
-      ]
+      "list": []
     },
     "prettierMissing": {
       "description": "Recommended rules that should be turned off by \"eslint-config-prettier\" but are missing from the project.",
@@ -243,9 +242,7 @@
       "description": "Deprecated rules that should not exist in the project.",
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
-      "list": [
-        "no-return-await"
-      ]
+      "list": []
     },
     "overwriteRecommended": {
       "description": "Recommended rules that have been overwritten default configuration.",
@@ -326,9 +323,7 @@
       "description": "Rules that should exist in the project but are missing.",
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
-      "list": [
-        "unicode-bom"
-      ]
+      "list": []
     }
   },
   "typescript": {
@@ -352,7 +347,6 @@
         "@typescript-eslint/explicit-member-accessibility",
         "@typescript-eslint/explicit-module-boundary-types",
         "@typescript-eslint/init-declarations",
-        "@typescript-eslint/lines-between-class-members",
         "@typescript-eslint/member-ordering",
         "@typescript-eslint/method-signature-style",
         "@typescript-eslint/naming-convention",
@@ -385,7 +379,6 @@
         "@typescript-eslint/no-useless-constructor",
         "@typescript-eslint/no-useless-empty-export",
         "@typescript-eslint/non-nullable-type-assertion-style",
-        "@typescript-eslint/padding-line-between-statements",
         "@typescript-eslint/parameter-properties",
         "@typescript-eslint/prefer-enum-initializers",
         "@typescript-eslint/prefer-for-of",
@@ -440,9 +433,7 @@
       "description": "Non-recommended rules that conflict with rules that should be turned off by \"eslint-config-prettier\".",
       "descriptionCN": "与应该被 “eslint-config-prettier” 关闭的规则冲突的非推荐规则。",
       "expected": false,
-      "list": [
-        "@typescript-eslint/no-extra-semi"
-      ]
+      "list": []
     },
     "prettierMissing": {
       "description": "Recommended rules that should be turned off by \"eslint-config-prettier\" but are missing from the project.",
@@ -461,7 +452,10 @@
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-type-alias"
+        "@typescript-eslint/lines-between-class-members",
+        "@typescript-eslint/no-extra-semi",
+        "@typescript-eslint/no-type-alias",
+        "@typescript-eslint/padding-line-between-statements"
       ]
     },
     "overwriteRecommended": {
@@ -521,9 +515,16 @@
       "list": [
         "@typescript-eslint/adjacent-overload-signatures",
         "@typescript-eslint/class-methods-use-this",
+        "@typescript-eslint/max-params",
+        "@typescript-eslint/no-array-delete",
         "@typescript-eslint/no-empty-function",
         "@typescript-eslint/no-inferrable-types",
-        "@typescript-eslint/prefer-namespace-keyword"
+        "@typescript-eslint/no-unsafe-unary-minus",
+        "@typescript-eslint/no-useless-template-literals",
+        "@typescript-eslint/prefer-destructuring",
+        "@typescript-eslint/prefer-find",
+        "@typescript-eslint/prefer-namespace-keyword",
+        "@typescript-eslint/prefer-promise-reject-errors"
       ]
     }
   },

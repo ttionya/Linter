@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 必须使用 if (foo === 5) 而不是 if (5 === foo)
-     * @see {@link https://eslint.org/docs/latest/rules/yoda}
+     * @see {@link https://eslint.org/docs/v8.x/rules/yoda}
      * @category Base
      * @fixable
      */

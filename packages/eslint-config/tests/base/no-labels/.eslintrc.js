@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 禁止使用 label
-     * @see {@link https://eslint.org/docs/latest/rules/no-labels}
+     * @see {@link https://eslint.org/docs/v8.x/rules/no-labels}
      * @category Base
      */
     'no-labels': [

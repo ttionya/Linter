@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 已定义的变量必须使用
-     * @see {@link https://eslint.org/docs/latest/rules/no-unused-vars}
+     * @see {@link https://eslint.org/docs/v8.x/rules/no-unused-vars}
      * @category Base
      * @recommended
      */

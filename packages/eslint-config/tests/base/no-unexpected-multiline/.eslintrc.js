@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 禁止混淆多行表达式
-     * @see {@link https://eslint.org/docs/latest/rules/no-unexpected-multiline}
+     * @see {@link https://eslint.org/docs/v8.x/rules/no-unexpected-multiline}
      * @category Base
      * @recommended
      */
