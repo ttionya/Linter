@@ -148,6 +148,7 @@ module.exports = {
   'spaced-comment': require('./spaced-comment/.eslintrc.js'),
   strict: require('./strict/.eslintrc.js'),
   'symbol-description': require('./symbol-description/.eslintrc.js'),
+  'unicode-bom': require('./unicode-bom/.eslintrc.js'),
   'vars-on-top': require('./vars-on-top/.eslintrc.js'),
   yoda: require('./yoda/.eslintrc.js'),
 }
