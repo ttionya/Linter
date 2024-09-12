@@ -9,18 +9,19 @@ import { defineConfig } from './utils.js'
 export default defineConfig({
   plugins: ['prettier-plugin-jsdoc'],
 
-  jsdocSpaces: 1,
-  jsdocDescriptionWithDot: false,
-  jsdocDescriptionTag: false,
-  jsdocVerticalAlignment: false,
-  jsdocKeepUnParseAbleExampleIndent: true, // false
+  jsdocAddDefaultToDescription: false, // true
+  jsdocCapitalizeDescription: false, // true
   jsdocCommentLineStrategy: 'keep', // singleLine
+  jsdocDescriptionTag: false,
+  jsdocDescriptionWithDot: false,
+  jsdocKeepUnParseAbleExampleIndent: true, // false
+  jsdocLineWrappingStyle: 'greedy',
+  jsdocPreferCodeFences: false,
+  // jsdocPrintWidth: undefined,
   jsdocSeparateReturnsFromParam: false,
   jsdocSeparateTagGroups: false,
-  jsdocCapitalizeDescription: false, // true
+  jsdocSpaces: 1,
+  // jsdocTagsOrder: undefined
+  jsdocVerticalAlignment: false,
   tsdoc: false,
-  // jsdocPrintWidth: undefined,
-  jsdocAddDefaultToDescription: false, // true
-  jsdocPreferCodeFences: false,
-  jsdocLineWrappingStyle: 'greedy',
 })
