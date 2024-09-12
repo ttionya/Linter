@@ -354,6 +354,7 @@
         "@typescript-eslint/member-ordering",
         "@typescript-eslint/method-signature-style",
         "@typescript-eslint/naming-convention",
+        "@typescript-eslint/no-array-delete",
         "@typescript-eslint/no-confusing-non-null-assertion",
         "@typescript-eslint/no-confusing-void-expression",
         "@typescript-eslint/no-dupe-class-members",
@@ -515,7 +516,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-array-delete",
         "@typescript-eslint/no-empty-function",
         "@typescript-eslint/no-inferrable-types",
         "@typescript-eslint/no-unsafe-unary-minus",

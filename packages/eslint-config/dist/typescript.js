@@ -277,6 +277,14 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
 
         /**
+         * 禁止对数组使用 `delete` 运算符
+         * @see {@link https://typescript-eslint.io/rules/no-array-delete/}
+         * @category TypeScript
+         * @requires-type-information
+         */
+        '@typescript-eslint/no-array-delete': 'error',
+
+        /**
          * 要求更有意义的 toString()
          * @see {@link https://typescript-eslint.io/rules/no-base-to-string/}
          * @category TypeScript

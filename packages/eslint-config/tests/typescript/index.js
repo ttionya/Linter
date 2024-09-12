@@ -23,6 +23,7 @@ module.exports = {
   'member-ordering': require('./member-ordering/.eslintrc.js'),
   'method-signature-style': require('./method-signature-style/.eslintrc.js'),
   'naming-convention': require('./naming-convention/.eslintrc.js'),
+  'no-array-delete': require('./no-array-delete/.eslintrc.js'),
   'no-base-to-string': require('./no-base-to-string/.eslintrc.js'),
   'no-confusing-non-null-assertion': require('./no-confusing-non-null-assertion/.eslintrc.js'),
   'no-confusing-void-expression': require('./no-confusing-void-expression/.eslintrc.js'),
