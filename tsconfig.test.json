@@ -1,5 +1,9 @@
 {
   "extends": "./tsconfig.json",
 
-  "exclude": ["./packages/eslint-config/tests/**/*"]
+  "exclude": ["./packages/eslint-config/tests/**/*"],
+
+  "compilerOptions": {
+    "skipLibCheck": true
+  }
 }
