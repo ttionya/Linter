@@ -5,6 +5,7 @@ module.exports = {
   'array-type': require('./array-type/.eslintrc.js'),
   'ban-tslint-comment': require('./ban-tslint-comment/.eslintrc.js'),
   'class-literal-property-style': require('./class-literal-property-style/.eslintrc.js'),
+  'class-methods-use-this': require('./class-methods-use-this/.eslintrc.js'),
   'consistent-generic-constructors': require('./consistent-generic-constructors/.eslintrc.js'),
   'consistent-indexed-object-style': require('./consistent-indexed-object-style/.eslintrc.js'),
   'consistent-type-assertions': require('./consistent-type-assertions/.eslintrc.js'),

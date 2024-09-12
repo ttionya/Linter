@@ -58,6 +58,13 @@ module.exports = {
         '@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 
         /**
+         * 在类的非静态方法中，必须存在对 this 的引用
+         * @see {@link https://typescript-eslint.io/rules/class-methods-use-this/}
+         * @category TypeScript
+         */
+        '@typescript-eslint/class-methods-use-this': 'off',
+
+        /**
          * 使用 Map 或 Set 时，必须在构造函数上用泛型定义类型
          * @see {@link https://typescript-eslint.io/rules/consistent-generic-constructors/}
          * @category TypeScript
