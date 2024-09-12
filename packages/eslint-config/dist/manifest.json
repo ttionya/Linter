@@ -332,6 +332,7 @@
       "descriptionCN": "正常规则",
       "expected": true,
       "list": [
+        "@typescript-eslint/adjacent-overload-signatures",
         "@typescript-eslint/array-type",
         "@typescript-eslint/ban-tslint-comment",
         "@typescript-eslint/class-literal-property-style",
@@ -512,7 +513,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/adjacent-overload-signatures",
         "@typescript-eslint/class-methods-use-this",
         "@typescript-eslint/max-params",
         "@typescript-eslint/no-array-delete",

@@ -20,6 +20,13 @@ module.exports = {
 
       rules: {
         /**
+         * 函数重载签名必须连续
+         * @see {@link https://typescript-eslint.io/rules/adjacent-overload-signatures/}
+         * @category TypeScript
+         */
+        '@typescript-eslint/adjacent-overload-signatures': 'error',
+
+        /**
          * 限制数组类型必须使用 Array<T> 或 T[]
          * @see {@link https://typescript-eslint.io/rules/array-type/}
          * @category TypeScript

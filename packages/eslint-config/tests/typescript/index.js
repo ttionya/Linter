@@ -1,6 +1,7 @@
 /* eslint sort-keys: 'error' */
 
 module.exports = {
+  'adjacent-overload-signatures': require('./adjacent-overload-signatures/.eslintrc.js'),
   'array-type': require('./array-type/.eslintrc.js'),
   'ban-tslint-comment': require('./ban-tslint-comment/.eslintrc.js'),
   'class-literal-property-style': require('./class-literal-property-style/.eslintrc.js'),
