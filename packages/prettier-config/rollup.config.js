@@ -1,5 +1,5 @@
 import path from 'node:path'
-import typescript from 'rollup-plugin-typescript2'
+import typescript from '@rollup/plugin-typescript'
 import { glob } from 'glob'
 
 export default glob.sync('src/*.ts').map(generateConfig)
@@ -20,6 +20,10 @@ function generateConfig(file) {
         format: 'esm',
       },
     ],
-    plugins: [typescript()],
+    plugins: [
+      typescript({
+        declarationDir: distDir,
+      }),
+    ],
   }
 }
