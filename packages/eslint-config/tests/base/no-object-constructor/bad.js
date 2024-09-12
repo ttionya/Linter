@@ -1,5 +1,5 @@
 /* eslint-disable */
-/* eslint-enable no-new-object */
+/* eslint-enable no-object-constructor */
 
 // errorCount 2
 
