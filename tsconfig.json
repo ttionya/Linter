@@ -10,8 +10,6 @@
 
     "allowJs": true,
 
-    "moduleResolution": "Node16",
-
     "paths": {
       "@ttionya/eslint-config/*": ["./packages/eslint-config/*"]
     },
