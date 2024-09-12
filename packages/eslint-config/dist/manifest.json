@@ -363,6 +363,7 @@
         "@typescript-eslint/no-empty-interface",
         "@typescript-eslint/no-extraneous-class",
         "@typescript-eslint/no-import-type-side-effects",
+        "@typescript-eslint/no-inferrable-types",
         "@typescript-eslint/no-invalid-this",
         "@typescript-eslint/no-invalid-void-type",
         "@typescript-eslint/no-loop-func",
@@ -517,7 +518,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-inferrable-types",
         "@typescript-eslint/no-unsafe-unary-minus",
         "@typescript-eslint/no-useless-template-literals",
         "@typescript-eslint/prefer-destructuring",

@@ -36,6 +36,7 @@ module.exports = {
   'no-extraneous-class': require('./no-extraneous-class/.eslintrc.js'),
   'no-floating-promises': require('./no-floating-promises/.eslintrc.js'),
   'no-import-type-side-effects': require('./no-import-type-side-effects/.eslintrc.js'),
+  'no-inferrable-types': require('./no-inferrable-types/.eslintrc.js'),
   'no-invalid-this': require('./no-invalid-this/.eslintrc.js'),
   'no-invalid-void-type': require('./no-invalid-void-type/.eslintrc.js'),
   'no-loop-func': require('./no-loop-func/.eslintrc.js'),
