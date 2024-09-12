@@ -359,6 +359,7 @@
         "@typescript-eslint/no-confusing-void-expression",
         "@typescript-eslint/no-dupe-class-members",
         "@typescript-eslint/no-dynamic-delete",
+        "@typescript-eslint/no-empty-function",
         "@typescript-eslint/no-empty-interface",
         "@typescript-eslint/no-extraneous-class",
         "@typescript-eslint/no-import-type-side-effects",
@@ -516,7 +517,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-empty-function",
         "@typescript-eslint/no-inferrable-types",
         "@typescript-eslint/no-unsafe-unary-minus",
         "@typescript-eslint/no-useless-template-literals",

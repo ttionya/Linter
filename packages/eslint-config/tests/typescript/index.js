@@ -30,6 +30,7 @@ module.exports = {
   'no-dupe-class-members': require('./no-dupe-class-members/.eslintrc.js'),
   'no-duplicate-enum-values': require('./no-duplicate-enum-values/.eslintrc.js'),
   'no-dynamic-delete': require('./no-dynamic-delete/.eslintrc.js'),
+  'no-empty-function': require('./no-empty-function/.eslintrc.js'),
   'no-empty-interface': require('./no-empty-interface/.eslintrc.js'),
   'no-explicit-any': require('./no-explicit-any/.eslintrc.js'),
   'no-extraneous-class': require('./no-extraneous-class/.eslintrc.js'),
