@@ -20,6 +20,7 @@ function generateConfig(file) {
         format: 'esm',
       },
     ],
+    external: ['deepmerge'],
     plugins: [
       typescript({
         declarationDir: distDir,
