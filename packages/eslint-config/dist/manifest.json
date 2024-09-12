@@ -350,6 +350,7 @@
         "@typescript-eslint/explicit-module-boundary-types",
         "@typescript-eslint/init-declarations",
         "@typescript-eslint/lines-between-class-members",
+        "@typescript-eslint/max-params",
         "@typescript-eslint/member-ordering",
         "@typescript-eslint/method-signature-style",
         "@typescript-eslint/naming-convention",
@@ -514,7 +515,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/max-params",
         "@typescript-eslint/no-array-delete",
         "@typescript-eslint/no-empty-function",
         "@typescript-eslint/no-inferrable-types",

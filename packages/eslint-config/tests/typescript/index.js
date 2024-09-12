@@ -19,6 +19,7 @@ module.exports = {
   'explicit-module-boundary-types': require('./explicit-module-boundary-types/.eslintrc.js'),
   'init-declarations': require('./init-declarations/.eslintrc.js'),
   'lines-between-class-members': require('./lines-between-class-members/.eslintrc.js'),
+  'max-params': require('./max-params/.eslintrc.js'),
   'member-ordering': require('./member-ordering/.eslintrc.js'),
   'method-signature-style': require('./method-signature-style/.eslintrc.js'),
   'naming-convention': require('./naming-convention/.eslintrc.js'),
