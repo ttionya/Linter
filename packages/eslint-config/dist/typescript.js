@@ -661,7 +661,6 @@ module.exports = {
          * 禁止不安全的一元减号
          * @see {@link https://typescript-eslint.io/rules/no-unsafe-unary-minus/}
          * @category TypeScript
-         * @requires-type-information
          */
         '@typescript-eslint/no-unsafe-unary-minus': 'error',
 
@@ -711,6 +710,14 @@ module.exports = {
          * @fixable
          */
         '@typescript-eslint/no-useless-empty-export': 'error',
+
+        /**
+         * 禁止不必要的模板字符串
+         * @see {@link https://typescript-eslint.io/rules/no-useless-template-literals/}
+         * @category TypeScript
+         * @requires-type-information
+         */
+        '@typescript-eslint/no-useless-template-literals': 'error',
 
         /**
          * 必须使用 ! 而不是 as

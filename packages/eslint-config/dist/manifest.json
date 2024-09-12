@@ -386,6 +386,7 @@
         "@typescript-eslint/no-use-before-define",
         "@typescript-eslint/no-useless-constructor",
         "@typescript-eslint/no-useless-empty-export",
+        "@typescript-eslint/no-useless-template-literals",
         "@typescript-eslint/non-nullable-type-assertion-style",
         "@typescript-eslint/parameter-properties",
         "@typescript-eslint/prefer-enum-initializers",
@@ -519,7 +520,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/no-useless-template-literals",
         "@typescript-eslint/prefer-destructuring",
         "@typescript-eslint/prefer-find",
         "@typescript-eslint/prefer-namespace-keyword",

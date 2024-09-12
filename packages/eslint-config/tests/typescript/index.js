@@ -69,6 +69,7 @@ module.exports = {
   'no-use-before-define': require('./no-use-before-define/.eslintrc.js'),
   'no-useless-constructor': require('./no-useless-constructor/.eslintrc.js'),
   'no-useless-empty-export': require('./no-useless-empty-export/.eslintrc.js'),
+  'no-useless-template-literals': require('./no-useless-template-literals/.eslintrc.js'),
   'non-nullable-type-assertion-style': require('./non-nullable-type-assertion-style/.eslintrc.js'),
   'parameter-properties': require('./parameter-properties/.eslintrc.js'),
   'prefer-enum-initializers': require('./prefer-enum-initializers/.eslintrc.js'),
