@@ -30,11 +30,12 @@ jobs:
       -
         name: Test
         run: |
-          sed -i 's#\("eslint": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
-          sed -i 's#\("@typescript-eslint/eslint-plugin": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
-          sed -i 's#\("@typescript-eslint/parser": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
-          sed -i 's#\("eslint-config-prettier": \)".*"#\1"latest"#' ./packages/eslint-config/package.json
+          sed -i 's#\("eslint": \)".*"#\1"8.x"#' ./packages/eslint-config/package.json
+          sed -i 's#\("@typescript-eslint/eslint-plugin": \)".*"#\1"6.x"#' ./packages/eslint-config/package.json
+          sed -i 's#\("@typescript-eslint/parser": \)".*"#\1"6.x"#' ./packages/eslint-config/package.json
+          sed -i 's#\("eslint-config-prettier": \)".*"#\1"9.x"#' ./packages/eslint-config/package.json
           pnpm install --no-frozen-lockfile
+          pnpm run --filter=@ttionya/prettier-config build
           pnpm run --filter=@ttionya/eslint-config check
       -
         name: Get Content
