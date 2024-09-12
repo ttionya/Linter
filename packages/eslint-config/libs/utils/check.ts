@@ -9,6 +9,7 @@ import {
   PATH_TESTS,
   PATH_DIST,
   FILE_ESLINTRC,
+  DEPRECATED_WHITE_LIST,
   checkResultOutputMeta,
 } from '../constants'
 import { globSync } from './glob'
@@ -74,7 +75,7 @@ export default class Check {
         } else {
           const ruleModule = rulesMap.get(ruleName)!
 
-          if (this.isDeprecated(ruleModule)) {
+          if (this.isDeprecated(ruleName, ruleModule)) {
             // 规则已经被废弃
             result.deprecated!.push(ruleName)
           } else if (this.isRecommended(ruleModule)) {
@@ -107,7 +108,7 @@ export default class Check {
         } else if (this.isPrettierRule(ruleName)) {
           // prettier 规则
           result.prettier!.push(ruleName)
-        } else if (this.isDeprecated(ruleModule)) {
+        } else if (this.isDeprecated(ruleName, ruleModule)) {
           // 不做记录
         } else {
           // 剩余都是缺失的规则
@@ -174,8 +175,8 @@ export default class Check {
   /**
    * 判断当前规则是否废弃
    */
-  private isDeprecated(ruleModule: IRuleModule): boolean {
-    return !!ruleModule.meta?.deprecated
+  private isDeprecated(ruleName: string, ruleModule: IRuleModule): boolean {
+    return !!ruleModule.meta?.deprecated && !DEPRECATED_WHITE_LIST.includes(ruleName)
   }
 
   /**
