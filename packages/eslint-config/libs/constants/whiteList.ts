@@ -11,4 +11,5 @@ export const DEPRECATED_WHITE_LIST = [
   'no-extra-semi',
   'no-mixed-spaces-and-tabs',
   'spaced-comment',
+  '@typescript-eslint/lines-between-class-members',
 ]

@@ -326,15 +326,6 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
 
         /**
-         * 禁止不必要的分号
-         * @see {@link https://typescript-eslint.io/rules/no-extra-semi/}
-         * @category TypeScript
-         * @recommended
-         * @fixable
-         */
-        '@typescript-eslint/no-extra-semi': 'off',
-
-        /**
          * 禁止定义没必要的类，比如只有静态方法的类
          * @see {@link https://typescript-eslint.io/rules/no-extraneous-class/}
          * @category TypeScript
@@ -671,14 +662,6 @@ module.exports = {
          * @requires-type-information
          */
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
-
-        /**
-         * 限制语句之间的空行规则
-         * @see {@link https://typescript-eslint.io/rules/padding-line-between-statements/}
-         * @category TypeScript
-         * @fixable
-         */
-        '@typescript-eslint/padding-line-between-statements': 'off',
 
         /**
          * 类的构造函数参数作为类属性时，必须加上可访问性修饰符

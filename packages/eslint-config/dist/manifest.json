@@ -347,6 +347,7 @@
         "@typescript-eslint/explicit-member-accessibility",
         "@typescript-eslint/explicit-module-boundary-types",
         "@typescript-eslint/init-declarations",
+        "@typescript-eslint/lines-between-class-members",
         "@typescript-eslint/member-ordering",
         "@typescript-eslint/method-signature-style",
         "@typescript-eslint/naming-convention",
@@ -420,6 +421,7 @@
         "@typescript-eslint/lines-around-comment",
         "@typescript-eslint/member-delimiter-style",
         "@typescript-eslint/no-extra-parens",
+        "@typescript-eslint/no-extra-semi",
         "@typescript-eslint/object-curly-spacing",
         "@typescript-eslint/quotes",
         "@typescript-eslint/semi",
@@ -452,10 +454,7 @@
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/lines-between-class-members",
-        "@typescript-eslint/no-extra-semi",
-        "@typescript-eslint/no-type-alias",
-        "@typescript-eslint/padding-line-between-statements"
+        "@typescript-eslint/no-type-alias"
       ]
     },
     "overwriteRecommended": {
