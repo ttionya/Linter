@@ -74,6 +74,7 @@ module.exports = {
   'parameter-properties': require('./parameter-properties/.eslintrc.js'),
   'prefer-destructuring': require('./prefer-destructuring/.eslintrc.js'),
   'prefer-enum-initializers': require('./prefer-enum-initializers/.eslintrc.js'),
+  'prefer-find': require('./prefer-find/.eslintrc.js'),
   'prefer-for-of': require('./prefer-for-of/.eslintrc.js'),
   'prefer-function-type': require('./prefer-function-type/.eslintrc.js'),
   'prefer-includes': require('./prefer-includes/.eslintrc.js'),

@@ -758,6 +758,14 @@ module.exports = {
         '@typescript-eslint/prefer-enum-initializers': 'off',
 
         /**
+         * 使用 array.find 替代 array.filter[0]
+         * @see {@link https://typescript-eslint.io/rules/prefer-find/}
+         * @category TypeScript
+         * @requires-type-information
+         */
+        '@typescript-eslint/prefer-find': 'error',
+
+        /**
          * 使用 for 循环遍历数组时，如果索引仅用于获取成员，则必须使用 for of 循环替代 for 循环
          * @see {@link https://typescript-eslint.io/rules/prefer-for-of/}
          * @category TypeScript
