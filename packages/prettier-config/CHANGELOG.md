@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.0.1
+
+### Dependencies
+
+- `prettier-plugin-jsdoc@^1.1.0` => `prettier-plugin-jsdoc@^1.3.0`
+
+<br>
+
 ## v2.0.0
 
 ### Feature
