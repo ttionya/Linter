@@ -465,9 +465,7 @@
       "description": "Deprecated rules that should not exist in the project.",
       "descriptionCN": "项目中不应该存在的被废弃的规则。",
       "expected": false,
-      "list": [
-        "@typescript-eslint/no-type-alias"
-      ]
+      "list": []
     },
     "overwriteRecommended": {
       "description": "Recommended rules that have been overwritten default configuration.",

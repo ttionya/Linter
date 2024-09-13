@@ -555,13 +555,6 @@ module.exports = {
         ],
 
         /**
-         * 禁止使用类型别名
-         * @see {@link https://typescript-eslint.io/rules/no-type-alias/}
-         * @category TypeScript
-         */
-        '@typescript-eslint/no-type-alias': 'off',
-
-        /**
          * 测试表达式中的布尔类型禁止与 true 或 false 直接比较
          * @see {@link https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare/}
          * @category TypeScript

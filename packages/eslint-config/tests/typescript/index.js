@@ -53,7 +53,6 @@ module.exports = {
   'no-shadow': require('./no-shadow/.eslintrc.js'),
   'no-this-alias': require('./no-this-alias/.eslintrc.js'),
   'no-throw-literal': require('./no-throw-literal/.eslintrc.js'),
-  'no-type-alias': require('./no-type-alias/.eslintrc.js'),
   'no-unnecessary-boolean-literal-compare': require('./no-unnecessary-boolean-literal-compare/.eslintrc.js'),
   'no-unnecessary-condition': require('./no-unnecessary-condition/.eslintrc.js'),
   'no-unnecessary-qualifier': require('./no-unnecessary-qualifier/.eslintrc.js'),
