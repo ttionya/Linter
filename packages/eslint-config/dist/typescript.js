@@ -798,6 +798,14 @@ module.exports = {
         '@typescript-eslint/prefer-literal-enum-member': 'off',
 
         /**
+         * 使用 namespace 替代 module
+         * @see {@link https://typescript-eslint.io/rules/prefer-namespace-keyword/}
+         * @category TypeScript
+         * @fixable
+         */
+        '@typescript-eslint/prefer-namespace-keyword': 'off',
+
+        /**
          * 使用 ?? 替代 ||
          * @see {@link https://typescript-eslint.io/rules/prefer-nullish-coalescing/}
          * @category TypeScript

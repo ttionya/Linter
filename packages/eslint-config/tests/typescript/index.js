@@ -79,6 +79,7 @@ module.exports = {
   'prefer-function-type': require('./prefer-function-type/.eslintrc.js'),
   'prefer-includes': require('./prefer-includes/.eslintrc.js'),
   'prefer-literal-enum-member': require('./prefer-literal-enum-member/.eslintrc.js'),
+  'prefer-namespace-keyword': require('./prefer-namespace-keyword/.eslintrc.js'),
   'prefer-nullish-coalescing': require('./prefer-nullish-coalescing/.eslintrc.js'),
   'prefer-optional-chain': require('./prefer-optional-chain/.eslintrc.js'),
   'prefer-readonly': require('./prefer-readonly/.eslintrc.js'),

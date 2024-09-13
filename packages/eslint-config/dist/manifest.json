@@ -396,6 +396,7 @@
         "@typescript-eslint/prefer-function-type",
         "@typescript-eslint/prefer-includes",
         "@typescript-eslint/prefer-literal-enum-member",
+        "@typescript-eslint/prefer-namespace-keyword",
         "@typescript-eslint/prefer-nullish-coalescing",
         "@typescript-eslint/prefer-optional-chain",
         "@typescript-eslint/prefer-readonly-parameter-types",
@@ -522,7 +523,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/prefer-namespace-keyword",
         "@typescript-eslint/prefer-promise-reject-errors"
       ]
     }
