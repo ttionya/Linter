@@ -80,13 +80,13 @@ This rule is recommended for use in node environments only.
 
 ```bash
 # NPM
-npm i -D typescript \
+npm i -D typescript@~5.3.0 \
          @typescript-eslint/eslint-plugin \
          @typescript-eslint/parser \
          @ttionya/eslint-config
 
 # PNPM
-pnpm add -D typescript \
+pnpm add -D typescript@~5.3.0 \
             @typescript-eslint/eslint-plugin \
             @typescript-eslint/parser \
             @ttionya/eslint-config
