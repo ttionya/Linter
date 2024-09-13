@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 指定类成员的排序规则
-     * @see {@link https://typescript-eslint.io/rules/member-ordering/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/member-ordering.md}
      * @category TypeScript
      * @reason 优先级：
      *          1. static > instance

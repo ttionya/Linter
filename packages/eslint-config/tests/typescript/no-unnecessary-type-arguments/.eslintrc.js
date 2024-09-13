@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 禁止范型的类型有默认值时，将范型设置为该默认值
-     * @see {@link https://typescript-eslint.io/rules/no-unnecessary-type-arguments/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/no-unnecessary-type-arguments.md}
      * @category TypeScript
      * @reason 写了类型表达可以更清晰
      * @fixable

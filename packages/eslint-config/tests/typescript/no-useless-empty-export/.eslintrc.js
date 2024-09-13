@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 禁止导出空对象
-     * @see {@link https://typescript-eslint.io/rules/no-useless-empty-export/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/no-useless-empty-export.md}
      * @category TypeScript
      * @fixable
      */

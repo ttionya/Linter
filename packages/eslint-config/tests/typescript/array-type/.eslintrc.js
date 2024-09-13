@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 限制数组类型必须使用 Array<T> 或 T[]
-     * @see {@link https://typescript-eslint.io/rules/array-type/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/array-type.md}
      * @category TypeScript
      * @fixable
      */

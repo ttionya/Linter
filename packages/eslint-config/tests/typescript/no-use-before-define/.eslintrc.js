@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * 变量必须先定义后使用
-     * @see {@link https://typescript-eslint.io/rules/no-use-before-define/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/no-use-before-define.md}
      * @category TypeScript
      */
     '@typescript-eslint/no-use-before-define': [

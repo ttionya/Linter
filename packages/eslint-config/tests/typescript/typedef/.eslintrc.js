@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     /**
      * interface 和 type 定义时必须声明成员的类型
-     * @see {@link https://typescript-eslint.io/rules/typedef/}
+     * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/v6.21.0/packages/eslint-plugin/docs/rules/typedef.md}
      * @category TypeScript
      */
     '@typescript-eslint/typedef': [
