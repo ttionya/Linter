@@ -1,5 +1,49 @@
 # Changelog
 
+## v2.6.0
+
+### Dependencies
+
+- `eslint-config-prettier@^9.0.0` => `eslint-config-prettier@^9.1.0`
+- `typescript@4.x || 5.x` => `typescript@4.x || >=5.0.0 <5.4.0`
+- `eslint@^8.46.0` => `eslint@^8.57.0`
+- `@typescript-eslint/eslint-plugin@>=6.3.0` => `@typescript-eslint/eslint-plugin@>=6.21.0`
+- `@typescript-eslint/parser@>=6.3.0` => `@typescript-eslint/parser@>=6.21.0`
+- `@babel/core@>=7.22.10` => `@babel/core@>=7.25.0`
+- `@babel/eslint-parser@>=7.22.10` => `@babel/eslint-parser@>=7.25.0`
+
+### Feature
+
+- Add `unicode-bom` rule
+- Add `@typescript-eslint/adjacent-overload-signatures` rule
+- Add `@typescript-eslint/class-methods-use-this` rule
+- Add `@typescript-eslint/max-params` rule
+- Add `@typescript-eslint/no-array-delete` rule
+- Add `@typescript-eslint/no-empty-function` rule
+- Add `@typescript-eslint/no-inferrable-types` rule
+- Add `@typescript-eslint/no-unsafe-unary-minus` rule
+- Add `@typescript-eslint/no-useless-template-literals` rule
+- Add `@typescript-eslint/prefer-destructuring` rule
+- Add `@typescript-eslint/prefer-find` rule
+- Add `@typescript-eslint/prefer-namespace-keyword` rule
+- Add `@typescript-eslint/prefer-promise-reject-errors` rule
+- Rename `no-new-object` to `no-object-constructor`
+- Remove deprecated `max-statements-per-line` rule
+- Remove deprecated `no-return-await` rule
+- Remove deprecated `padding-line-between-statements` rule
+- Remove deprecated `@typescript-eslint/no-extra-semi` rule
+- Remove deprecated `@typescript-eslint/no-type-alias` rule
+- Remove deprecated `@typescript-eslint/padding-line-between-statements` rule
+- Update rule documentation links
+- Support deprecated rule whitelist
+
+### Chore
+
+- Update devDependencies
+- Update GitHub Actions
+
+<br>
+
 ## v2.5.0
 
 ### Dependencies
