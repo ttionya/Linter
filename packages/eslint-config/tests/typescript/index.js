@@ -72,6 +72,7 @@ module.exports = {
   'no-useless-template-literals': require('./no-useless-template-literals/.eslintrc.js'),
   'non-nullable-type-assertion-style': require('./non-nullable-type-assertion-style/.eslintrc.js'),
   'parameter-properties': require('./parameter-properties/.eslintrc.js'),
+  'prefer-destructuring': require('./prefer-destructuring/.eslintrc.js'),
   'prefer-enum-initializers': require('./prefer-enum-initializers/.eslintrc.js'),
   'prefer-for-of': require('./prefer-for-of/.eslintrc.js'),
   'prefer-function-type': require('./prefer-function-type/.eslintrc.js'),

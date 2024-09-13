@@ -389,6 +389,7 @@
         "@typescript-eslint/no-useless-template-literals",
         "@typescript-eslint/non-nullable-type-assertion-style",
         "@typescript-eslint/parameter-properties",
+        "@typescript-eslint/prefer-destructuring",
         "@typescript-eslint/prefer-enum-initializers",
         "@typescript-eslint/prefer-for-of",
         "@typescript-eslint/prefer-function-type",
@@ -520,7 +521,6 @@
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
       "list": [
-        "@typescript-eslint/prefer-destructuring",
         "@typescript-eslint/prefer-find",
         "@typescript-eslint/prefer-namespace-keyword",
         "@typescript-eslint/prefer-promise-reject-errors"
