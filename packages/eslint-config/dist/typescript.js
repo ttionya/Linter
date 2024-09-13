@@ -821,6 +821,13 @@ module.exports = {
         '@typescript-eslint/prefer-optional-chain': 'error',
 
         /**
+         * Promise 的 reject 中必须传入 Error 对象，而不是字面量
+         * @see {@link https://typescript-eslint.io/rules/prefer-promise-reject-errors/}
+         * @category TypeScript
+         */
+        '@typescript-eslint/prefer-promise-reject-errors': 'off',
+
+        /**
          * 私有变量如果没有在构造函数外被赋值，则必须设为 readonly
          * @see {@link https://typescript-eslint.io/rules/prefer-readonly/}
          * @category TypeScript

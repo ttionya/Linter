@@ -82,6 +82,7 @@ module.exports = {
   'prefer-namespace-keyword': require('./prefer-namespace-keyword/.eslintrc.js'),
   'prefer-nullish-coalescing': require('./prefer-nullish-coalescing/.eslintrc.js'),
   'prefer-optional-chain': require('./prefer-optional-chain/.eslintrc.js'),
+  'prefer-promise-reject-errors': require('./prefer-promise-reject-errors/.eslintrc.js'),
   'prefer-readonly': require('./prefer-readonly/.eslintrc.js'),
   'prefer-readonly-parameter-types': require('./prefer-readonly-parameter-types/.eslintrc.js'),
   'prefer-reduce-type-parameter': require('./prefer-reduce-type-parameter/.eslintrc.js'),

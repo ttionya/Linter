@@ -399,6 +399,7 @@
         "@typescript-eslint/prefer-namespace-keyword",
         "@typescript-eslint/prefer-nullish-coalescing",
         "@typescript-eslint/prefer-optional-chain",
+        "@typescript-eslint/prefer-promise-reject-errors",
         "@typescript-eslint/prefer-readonly-parameter-types",
         "@typescript-eslint/prefer-readonly",
         "@typescript-eslint/prefer-reduce-type-parameter",
@@ -522,9 +523,7 @@
       "description": "Rules that should exist in the project but are missing.",
       "descriptionCN": "项目中应该存在但是缺少的规则。",
       "expected": false,
-      "list": [
-        "@typescript-eslint/prefer-promise-reject-errors"
-      ]
+      "list": []
     }
   },
   "babel": {
