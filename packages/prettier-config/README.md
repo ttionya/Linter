@@ -34,10 +34,10 @@ Basic rules.
 
 ```bash
 # NPM
-npm i -D @ttionya/prettier-config
+npm i -D prettier @ttionya/prettier-config
 
 # PNPM
-pnpm add -D @ttionya/prettier-config
+pnpm add -D prettier @ttionya/prettier-config
 ```
 
 ```js
@@ -74,10 +74,10 @@ Each plugin is independent of the base rules, allowing you to combine them using
 
 ```bash
 # NPM
-npm i -D prettier-plugin-jsdoc @ttionya/prettier-config
+npm i -D prettier prettier-plugin-jsdoc @ttionya/prettier-config
 
 # PNPM
-pnpm add -D prettier-plugin-jsdoc @ttionya/prettier-config
+pnpm add -D prettier prettier-plugin-jsdoc @ttionya/prettier-config
 ```
 
 ```js
